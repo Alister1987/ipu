@@ -1,0 +1,9 @@
+#catapult-cookie-bar .ctcc-left-side {
+    font-size: medium !important;
+}
+
+#catapult-cookie-bar a {
+    color: #ffffff;
+    font-size: medium !important;
+    text-decoration: underline !important;
+}

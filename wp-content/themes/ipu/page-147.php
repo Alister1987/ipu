@@ -1,0 +1,1 @@
+<?php wp_redirect( get_permalink(757)); exit; //training and events->Upcoming events  ?>

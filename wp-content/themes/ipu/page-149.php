@@ -1,0 +1,1 @@
+<?php wp_redirect( get_permalink(751)); exit; //directory ?>
