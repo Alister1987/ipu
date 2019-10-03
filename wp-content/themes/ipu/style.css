@@ -7,3 +7,16 @@
     font-size: medium !important;
     text-decoration: underline !important;
 }
+footer #f_legal_wrapper .logo_wrapper,
+footer #f_legal_wrapper .f_legal_copyright,
+footer #f_sitemap .f_sitemap_quicklinks {
+    visibility: hidden;
+}
+footer #f_legal_wrapper .f_legal_links,
+footer #f_sitemap .f_sitemap_full {
+    background:#5b5a68;
+}
+footer #f_legal_wrapper,
+footer #f_sitemap {
+    background:#f2f2f2;
+}
