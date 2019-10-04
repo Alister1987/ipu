@@ -203,6 +203,69 @@ get_header();
               of people are in favour of pharmacists being able to prescribe some medicines for minor ailments.
             </div>
           </div>
+          <div class="white_block_header">
+            <div>Think Pharmacy</div>
+            Common Ailments the pharmacy can help with
+          </div>
+          <div class="white_block_wrapper">
+            <div class="white_block">
+              <div class="img_wrap">
+                <img src="<?php bloginfo('template_directory'); ?>/img/icon-1.png" alt="IPU" class="logo_header">
+              </div>
+              <div class="title_1">
+                Think Pharmacy
+              </div>
+              <div class="title_2">
+                Cold & Flu
+              </div>
+              <div class="desc">
+                Colds are caused by a virus they are often confused with flu. Learn how to take care of someone with flu.
+              </div>
+            </div>
+            <div class="white_block">
+              <div class="img_wrap">
+                <img src="<?php bloginfo('template_directory'); ?>/img/icon-2.png" alt="IPU" class="logo_header">
+              </div>
+              <div class="title_1">
+                Think Pharmacy
+              </div>
+              <div class="title_2">
+                Sore Tummy
+              </div>
+              <div class="desc">
+                Your pharmascist can help show you how to get through a bout of vomiting, diarrhoea, or both.
+              </div>
+            </div>
+            <div class="white_block">
+              <div class="img_wrap">
+                <img src="<?php bloginfo('template_directory'); ?>/img/icon-3.png" alt="IPU" class="logo_header">
+              </div>
+              <div class="title_1">
+                Think Pharmacy
+              </div>
+              <div class="title_2">
+                Chronic Illness
+              </div>
+              <div class="desc">
+                How to manage chronic illnesses,
+                such as diabetes, asthma and cardiovascular disease.
+              </div>
+            </div>
+            <div class="white_block">
+              <div class="img_wrap">
+                <img src="<?php bloginfo('template_directory'); ?>/img/icon-4.png" alt="IPU" class="logo_header">
+              </div>
+              <div class="title_1">
+                Think Pharmacy
+              </div>
+              <div class="title_2">
+                Lifestyle Help
+              </div>
+              <div class="desc">
+                Your local pharmacy can guide you in how to manage your weight or quit smoking.
+              </div>
+            </div>
+          </div>
             <section class="mkh_about" id="who-we-are">
                 <div class="box_wrapper box_green">
 

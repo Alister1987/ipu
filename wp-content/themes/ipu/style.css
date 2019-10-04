@@ -57,19 +57,17 @@ footer.mk_footer #f_contact {
     border-color: #e1e1e1;
 }
 .box_wrapper .box-video img{
-    max-width: 100%;
-}
-.mkh_about.video .box_wrapper .box_inside{
-    min-height: 382px;
+    width: 100%;
 }
 .prescribe_block {
-    height: 120px;
+    min-height: 120px;
     background-color: #00a6e7;
     padding: 36px;
     overflow: hidden;
 }
 .prescribe_block .percent_block{
-    float: right;
+    width: 100px;
+    margin: 0 auto;
     font-family: OpenSans;
     font-size: 60px;
     font-weight: 600;
@@ -79,14 +77,10 @@ footer.mk_footer #f_contact {
     letter-spacing: normal;
     text-align: left;
     color: #fefefe;
-    position: absolute;
-    left: -170px;
-    top: 20px;
+    height: 40px;
 }
 .prescribe_block .desc_block{
     position: relative;
-    width: 568px;
-    margin: 0 auto;
     font-family: OpenSans;
     font-size: 24px;
     font-weight: normal;
@@ -96,4 +90,85 @@ footer.mk_footer #f_contact {
     letter-spacing: normal;
     text-align: left;
     color: #ffffff;
+}
+.white_block_wrapper {
+    padding: 0 0 79px;
+    overflow: hidden;
+    background-color: #fff;
+}
+@media all and (min-width: 1025px){
+    .prescribe_block .percent_block{
+        position: absolute;
+        left: -170px;
+        top: 20px;
+    }
+    .prescribe_block .desc_block{
+        width: 568px;
+        margin: 0 auto;
+    }
+}
+@media all and (min-width: 769px){
+    .white_block_wrapper .white_block {
+        width: 25%;
+    }
+    .mkh_about.video .box_wrapper .box_inside{
+        min-height: 382px;
+    }
+}
+@media all and (min-width: 426px) and (max-width: 768px){
+    .white_block_wrapper .white_block {
+        width: 50%;
+    }
+}
+.white_block_wrapper .white_block{
+    text-align: center;
+    float: left;
+    padding: 37px 8px 0;
+}
+.white_block_wrapper .white_block .title_1{
+    font-weight: bold;
+    line-height: 1.14;
+}
+.white_block_wrapper .white_block .title_2{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.09;
+}
+.white_block_wrapper .white_block .img_wrap img{
+    height: 100%;
+}
+.white_block_wrapper .white_block .img_wrap{
+    height: 66px;
+    padding-bottom: 18px;
+    margin: 0 auto;
+}
+.white_block_wrapper .white_block .desc{
+    padding-top: 4px;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+.white_block_header div{
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: normal;
+}
+.white_block_header {
+    background-color: #fff;
+    padding-top: 38px;
+    font-family: OpenSans;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: 0.55px;
+    text-align: center;
+    color: #000000;
 }
