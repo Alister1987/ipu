@@ -267,67 +267,67 @@ get_header();
             </div>
           </div>
             <section class="mkh_about" id="who-we-are">
-                <div class="box_wrapper box_green">
-
-					<?php
-					$repeater = 'left_content';
-					$download = 'button';
-
-					if (get_field($repeater)):
-						while (have_rows($repeater)) : the_row();
-							//$title = get_sub_field('title');
-							$title = get_sub_field('title');
-							$description = get_sub_field('description');
-							$subtitle = get_sub_field('subtitle');
-							$link_address = get_sub_field('link_title');
-							$link_url = get_sub_field('link_url');
-							?>
-
-
-                            <div class="box_inside">
-                                <h4><?= $subtitle; ?></h4>
-                                <h3><?= $title; ?></h3>
-                                <div class="box_content">
-									<?= $description; ?>
-                                </div>
-                                <div class="box_action">
-                                    <a href="<?= $link_url; ?>" class="btn btn_action_go"><?= $link_address; ?></a>
-                                </div>
-                            </div>
-
-							<?php
-						endwhile;
-					endif;
-					wp_reset_query();
-					wp_reset_postdata();
-					?>
+              <div class="box_wrapper box_w_green">
+                <div class="box-video blue_circle">
+                  <div class="blue_ellipse">
+                    <div class="title">
+                      REMEMBER
+                    </div>
+                    <div class="desc">
+                      Your pharmacist is a
+                      healthcare professional.
+                      You can ask them for
+                      advice about any
+                      questions or
+                      concerns
+                    </div>
+                  </div>
+                  <img src="<?php bloginfo('template_directory'); ?>/img/shutterstock-1218727069.png" alt="IPU" class="logo_header">
                 </div>
+              </div>
+              <div class="box_wrapper box_green">
+                <div class="box_inside">
+                  <h4>Think Pharmacy</h4>
+                  <h3>What can you go to the pharmacy for?</h3>
+                  <div class="box_content">
+                    The pharmacy can provide you with a range of services, from practical advice on common ailments to explanations on medication interactions and much more. Your  pharmacist is a healthcare professional who can assist you with your health concerns quickly. They will also guide you to other health professionals or community services, if required.
+                  </div>
+                  <div class="box_action">
+                    <a href="#" class="btn btn_action_go">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="mkh_about" id="who-we-are">
+
+              <div class="box_wrapper box_purple">
+                  <?php
+                  $second = 'right_content';
+                  if (get_field($second)):
+                      while (have_rows($second)) : the_row();
+                          //$title = get_sub_field('title');
+                          $title = get_sub_field('title');
+                          $description = get_sub_field('description');
+                          $subtitle = get_sub_field('subtitle');
+                          $link_title = get_sub_field('link_title');
+                          $link_url = get_sub_field('link_url');
+                          ?>
+                        <div class="box_inside">
+                          <h4><?= $subtitle; ?></h4>
+                          <h3><?= $title; ?></h3>
+                          <div class="box_content"><?= $description; ?></div>
+                          <div class="box_action">
+                            <a href="<?= $link_url; ?>" class="btn btn_action_go"><?= $link_title; ?></a>
+                          </div>
+                        </div>
+                      <?php
+                      endwhile;
+                  endif;
+                  wp_reset_query();
+                  wp_reset_postdata();
+                  ?>
+              </div>
                 <div class="box_wrapper box_w_green">
-					<?php
-					$second = 'right_content';
-					if (get_field($second)):
-						while (have_rows($second)) : the_row();
-							//$title = get_sub_field('title');
-							$title = get_sub_field('title');
-							$description = get_sub_field('description');
-							$subtitle = get_sub_field('subtitle');
-							$link_title = get_sub_field('link_title');
-							$link_url = get_sub_field('link_url');
-							?>
-                            <div class="box_inside">
-                                <h4><?= $subtitle; ?></h4>
-                                <h3><?= $title; ?></h3>
-                                <div class="box_content"><?= $description; ?></div>
-                                <div class="box_action">
-                                    <a href="<?= $link_url; ?>" class="btn btn_action_go"><?= $link_title; ?></a>
-                                </div>
-                            </div>
-							<?php
-						endwhile;
-					endif;
-					wp_reset_query();
-					wp_reset_postdata();
-					?>
                 </div>
             </section>
 
