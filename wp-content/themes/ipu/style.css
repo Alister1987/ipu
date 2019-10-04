@@ -56,3 +56,44 @@ footer.mk_footer #f_contact {
     border-radius: 3px;
     border-color: #e1e1e1;
 }
+.box_wrapper .box-video img{
+    max-width: 100%;
+}
+.mkh_about.video .box_wrapper .box_inside{
+    min-height: 382px;
+}
+.prescribe_block {
+    height: 120px;
+    background-color: #00a6e7;
+    padding: 36px;
+    overflow: hidden;
+}
+.prescribe_block .percent_block{
+    float: right;
+    font-family: OpenSans;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.27;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fefefe;
+    position: absolute;
+    left: -170px;
+    top: 20px;
+}
+.prescribe_block .desc_block{
+    position: relative;
+    width: 568px;
+    margin: 0 auto;
+    font-family: OpenSans;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}

@@ -176,7 +176,7 @@ get_header();
 		?>
         <div class="content lp_content eight_column mk_home_content content_same_height">
 
-            <section class="mkh_about" id="who-we-are">
+            <section class="mkh_about video" id="who-we-are">
                 <div class="box_wrapper box_purple">
                   <div class="box_inside">
                     <h4>Think Pharmacy</h4>
@@ -190,8 +190,19 @@ get_header();
                   </div>
                 </div>
                 <div class="box_wrapper box_w_green">
+                  <div class="box-video">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/video.png" alt="IPU" class="logo_header">
+                  </div>
                 </div>
             </section>
+          <div class="prescribe_block">
+            <div class="desc_block">
+              <div class="percent_block">
+                96%
+              </div>
+              of people are in favour of pharmacists being able to prescribe some medicines for minor ailments.
+            </div>
+          </div>
             <section class="mkh_about" id="who-we-are">
                 <div class="box_wrapper box_green">
 
