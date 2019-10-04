@@ -327,8 +327,11 @@ get_header();
                   wp_reset_postdata();
                   ?>
               </div>
-                <div class="box_wrapper box_w_green">
+              <div class="box_wrapper box_w_green">
+                <div class="box-video">
+                  <img src="<?php bloginfo('template_directory'); ?>/img/shutterstock-1091736332.png" alt="IPU" class="logo_header">
                 </div>
+              </div>
             </section>
 
             <section class="grid_wrapper mkh_event" id="upcoming-events">

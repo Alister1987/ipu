@@ -111,9 +111,6 @@ footer.mk_footer #f_contact {
     .white_block_wrapper .white_block {
         width: 25%;
     }
-    .mkh_about.video .box_wrapper .box_inside{
-        min-height: 382px;
-    }
 }
 @media all and (min-width: 426px) and (max-width: 768px){
     .white_block_wrapper .white_block {
@@ -199,4 +196,7 @@ footer.mk_footer #f_contact {
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+}
+.box_wrapper.box_purple {
+    background-color: #b497c4;
 }
