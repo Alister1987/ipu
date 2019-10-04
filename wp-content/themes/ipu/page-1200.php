@@ -177,6 +177,22 @@ get_header();
         <div class="content lp_content eight_column mk_home_content content_same_height">
 
             <section class="mkh_about" id="who-we-are">
+                <div class="box_wrapper box_purple">
+                  <div class="box_inside">
+                    <h4>Think Pharmacy</h4>
+                    <h3>What can you go to the pharmacy for?</h3>
+                    <div class="box_content">
+                      The pharmacy can provide you with a range of services, from practical advice on common ailments to explanations on medication interactions and much more. Your  pharmacist is a healthcare professional who can assist you with your health concerns quickly. They will also guide you to other health professionals or community services, if required.
+                    </div>
+                    <div class="box_action">
+                      <a href="#" class="btn btn_action_go">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="box_wrapper box_w_green">
+                </div>
+            </section>
+            <section class="mkh_about" id="who-we-are">
                 <div class="box_wrapper box_green">
 
 					<?php

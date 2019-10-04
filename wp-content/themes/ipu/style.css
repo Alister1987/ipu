@@ -43,3 +43,16 @@ footer.mk_footer #f_contact {
 .top-image-header img {
     max-width: 100%;
 }
+.box_inside h4 {
+    font-weight: bold;
+    line-height: 1.14;
+}
+.box_inside h3 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.09;
+}
+#content_wrapper .btn_action_go {
+    border-radius: 3px;
+    border-color: #e1e1e1;
+}
