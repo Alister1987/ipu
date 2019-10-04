@@ -20,3 +20,26 @@ footer #f_legal_wrapper,
 footer #f_sitemap {
     background:#f2f2f2;
 }
+footer.mk_footer #f_contact {
+    display: none;
+}
+/*#main_img {*/
+/*    display: none;*/
+/*}*/
+@media all and (min-width: 801px){
+    .top-image-header {
+        width: 70%;
+    }
+}
+@media all and (max-width: 800px){
+    .top-image-header {
+        padding-top: 90px;
+    }
+}
+.top-image-header {
+    float: left;
+}
+
+.top-image-header img {
+    max-width: 100%;
+}

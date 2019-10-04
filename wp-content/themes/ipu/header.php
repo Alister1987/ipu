@@ -1372,7 +1372,7 @@ if(!$parent_page) {
                     <form class="search_form" action="<?php echo home_url(); ?>" method="get" role="search">
                         <label>
                             <span class="search_hourglass"></span>
-                            <input type="search" class="search_field" placeholder="I'm looking for..." value="" name="s" title="I'm looking for...">
+                            <input type="search" class="search_field" placeholder="Search" value="" name="s" title="Search">
                         </label>
 
                     </form>
@@ -1439,6 +1439,7 @@ if(!$parent_page) {
 							 * NON MEMBERS - top left menu
 							 *
 							 *************************************************************************************************************/
+
 							?>
                             <nav id="mk_home_main_menu" <?php if (!is_page(1200)) { ?> class='mk_page_main_menu'<?php } ?>>
                                 <div class="logo_wrapper">
@@ -1452,7 +1453,12 @@ if(!$parent_page) {
 									<?php wp_nav_menu(array('menu' => 'top-menu-non-members', 'menu_class' => 'mm_menu')); ?>
                                 </ul>
                             </nav>
-							<?php if (is_page(1200)) { ?>
+                          <div class="top-image-header">
+                            <img src="<?php bloginfo('template_directory'); ?>/img/ipu-web-youngwoman.png" alt="IPU" class="logo_header">
+                          </div>
+							<?php
+              /*
+              if (is_page(1200)) { ?>
                                 <div class="slider_mk_home" style="overflow: hidden; width: 1474px; height: 600px;"> <!-- start home slider -->
                                     <a class="unslider-arrow next">next</a>
                                     <ul style="width: 200%; position: relative; left: 0%; height: 600px;">
@@ -1496,7 +1502,9 @@ if(!$parent_page) {
 										?>
                                     </ul>
                                 </div>
-							<?php } ?>
+							<?php }
+              */
+              ?>
 							<?php if (!is_page(1200)) { ?>
                                 <div class="inner_mk_hero_wrapper">
 									<?php
@@ -1540,8 +1548,8 @@ if(!$parent_page) {
 					//***********************
 					// OLD HEADER
 					//***********************
+                  /*
 					?>
-                    <!--
 								<header>
 									<div id="header">
 
@@ -1628,8 +1636,9 @@ if(!$parent_page) {
 													</nav>
 				<?php } ?>
 									</div>
-								</header>-->
+								</header>
 					<?php
+          */
 					}
 					/*			 * ****
                      *
