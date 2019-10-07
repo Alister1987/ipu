@@ -107,6 +107,14 @@ footer.mk_footer #f_contact {
         margin: 0 auto;
     }
 }
+@media all and (max-width: 425px){
+    .white_block_header {
+        padding: 0 25px;
+    }
+    .white_block_wrapper .white_block {
+        padding: 37px 25px 0 !important;
+    }
+}
 @media all and (min-width: 769px){
     .white_block_wrapper .white_block {
         width: 25%;
