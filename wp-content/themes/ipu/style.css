@@ -92,7 +92,6 @@ footer.mk_footer #f_contact {
     color: #ffffff;
 }
 .white_block_wrapper {
-    padding: 0 0 79px;
     overflow: hidden;
     background-color: #fff;
 }
@@ -109,13 +108,19 @@ footer.mk_footer #f_contact {
 }
 @media all and (max-width: 425px){
     .white_block_header {
-        padding: 0 25px;
+        padding: 47px 45px 0 !important;
     }
     .white_block_wrapper .white_block {
-        padding: 37px 25px 0 !important;
+        padding: 37px 45px 0 !important;
+    }
+    .white_block_wrapper {
+        padding: 0 0 106px;
     }
 }
 @media all and (min-width: 769px){
+    .white_block_wrapper {
+        padding: 0 21px 79px;
+    }
     .white_block_wrapper .white_block {
         width: 25%;
     }
