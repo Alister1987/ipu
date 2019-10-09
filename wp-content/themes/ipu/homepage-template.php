@@ -87,6 +87,7 @@ $startTime = round(microtime(true) * 1000);
             <div class="box_wrapper box_w_blue box_huge box_two_column">
                 <div class="box_inside">
 					<?php
+          /*
 					$the_query = new WP_Query('page_id=82');
 					while ($the_query->have_posts()) :
 						$the_query->the_post();
@@ -98,7 +99,72 @@ $startTime = round(microtime(true) * 1000);
 						<?php
 					endwhile;
 					wp_reset_postdata();
+          */
 					?>
+                  <div class="white_block_header">
+                    <div>What's new</div>
+                    Current issues
+                  </div>
+                  <div class="white_block_wrapper">
+                    <div class="white_block">
+                      <div class="title_1">
+                        Current Issues
+                      </div>
+                      <div class="title_2">
+                        Latest on
+                        Brexit
+                      </div>
+                      <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
+                      </div>
+                      <div class="box_action">
+                        <a href="#" class="btn btn_action_go">Learn More</a>
+                      </div>
+                    </div>
+                    <div class="white_block">
+                      <div class="title_1">
+                        Current Issues
+                      </div>
+                      <div class="title_2">
+                        Medicines Authentication
+                      </div>
+                      <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
+                      </div>
+                      <div class="box_action">
+                        <a href="#" class="btn btn_action_go">Learn More</a>
+                      </div>
+                    </div>
+                    <div class="white_block">
+                      <div class="title_1">
+                        Current Issues
+                      </div>
+                      <div class="title_2">
+                        GMS Phased Dispensing
+                      </div>
+                      <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
+                      </div>
+                      <div class="box_action">
+                        <a href="#" class="btn btn_action_go">Learn More</a>
+                      </div>
+                    </div>
+                    <div class="white_block">
+                      <div class="title_1">
+                        Current Issues
+                      </div>
+                      <div class="title_2">
+                        European
+                        Elections
+                      </div>
+                      <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
+                      </div>
+                      <div class="box_action">
+                        <a href="#" class="btn btn_action_go">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
 
