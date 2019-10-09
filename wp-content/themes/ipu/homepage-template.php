@@ -173,6 +173,70 @@ $startTime = round(microtime(true) * 1000);
                       IMPORTANT — Suspendisse ligula nulla, viverra vitae vulputate id, luctus ut eros. Etiam consequat libero justo.
                     </div>
                   </div>
+                  <div class="white_block_header">
+                    <div>What's new</div>
+                    Ongoing Issues
+                  </div>
+                  <div class="white_block_wrapper">
+                    <div class="white_block">
+                      <div class="title_1">
+                        Ongoing Issues
+                      </div>
+                      <div class="title_2">
+                        PSI Issues
+                      </div>
+                      <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam. Morbi ligula quam.
+                        Morbi ligula quam.
+                      </div>
+                      <div class="box_action">
+                        <a href="#" class="btn btn_action_go">Learn More</a>
+                      </div>
+                    </div>
+                    <div class="white_block">
+                      <div class="title_1">
+                        Ongoing Issues
+                      </div>
+                      <div class="title_2">
+                        Department of Health Issues
+                      </div>
+                      <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
+                      </div>
+                      <div class="box_action">
+                        <a href="#" class="btn btn_action_go">Learn More</a>
+                      </div>
+                    </div>
+                    <div class="white_block">
+                      <div class="title_1">
+                        Ongoing Issues
+                      </div>
+                      <div class="title_2">
+                        Preferred Drugs Initiative
+                      </div>
+                      <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
+                      </div>
+                      <div class="box_action">
+                        <a href="#" class="btn btn_action_go">Learn More</a>
+                      </div>
+                    </div>
+                    <div class="white_block">
+                      <div class="title_1">
+                        Ongoing Issues
+                      </div>
+                      <div class="title_2">
+                        IPHA
+                        Agreement 2016
+                      </div>
+                      <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
+                      </div>
+                      <div class="box_action">
+                        <a href="#" class="btn btn_action_go">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
 

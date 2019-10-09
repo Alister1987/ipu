@@ -307,6 +307,7 @@ footer.mk_footer #f_contact {
 }
 .logged-in .box_wrapper .box_inside .box_action{
     width: 182px;
+    margin: 29px auto 0;
     float: none;
     padding: 0;
 }
@@ -322,7 +323,7 @@ footer.mk_footer #f_contact {
     border-radius: 5px;
 }
 .logged-in .white_block_wrapper .white_block .title_2{
-    padding: 0 20px;
+    padding: 0 30px;
     font-size: 22px;
     font-weight: bold;
     line-height: 1.09;
