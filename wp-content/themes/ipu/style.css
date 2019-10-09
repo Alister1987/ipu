@@ -213,3 +213,52 @@ footer.mk_footer #f_contact {
 .box_wrapper.box_purple {
     background-color: #b497c4;
 }
+.title_wrapper{}
+.title_wrapper .title_content{
+    background-color: #00a6e7;
+    height: 239px;
+    margin-top: 56px;
+    padding: 25px 125px 19px 51px;
+}
+.title_wrapper .title_content .top_text{
+    font-family: OpenSans;
+    font-size: 29.5px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.title_wrapper .title_content .bottom_text{
+    position: absolute;
+    bottom: 0;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    width: 80%;
+    padding: 19px 0;
+    border-top: 1px solid #fff;
+}
+
+.logged-in .searchbar {
+    border: none;
+}
+.logged-in .searchbar form label .search_hourglass {
+    background: url(img/icon_hourglass_green.svg) center center no-repeat;
+}
+.logged-in .searchbar form label {
+}
+.logged-in .searchbar form label .search_field,
+.logged-in .searchbar form label,
+.logged-in .searchbar form label .search_field::placeholder {
+    color: #7cc248;
+    background-color: #fff;
+}
