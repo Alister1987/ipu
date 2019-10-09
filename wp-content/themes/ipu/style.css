@@ -338,3 +338,12 @@ footer.mk_footer #f_contact {
     text-align: center;
     color: #000000;
 }
+.logged-in .prescribe_block .percent_block{
+    top:auto;
+}
+.logged-in .prescribe_block .desc_block{
+    width: 624px;
+}
+.logged-in .prescribe_block{
+    background-color: #f15a55;
+}

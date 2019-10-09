@@ -165,6 +165,14 @@ $startTime = round(microtime(true) * 1000);
                       </div>
                     </div>
                   </div>
+                  <div class="prescribe_block">
+                    <div class="desc_block">
+                      <div class="percent_block">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/vector-smart-object.png">
+                      </div>
+                      IMPORTANT — Suspendisse ligula nulla, viverra vitae vulputate id, luctus ut eros. Etiam consequat libero justo.
+                    </div>
+                  </div>
                 </div>
             </div>
 
