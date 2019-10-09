@@ -219,6 +219,7 @@ footer.mk_footer #f_contact {
     height: 239px;
     margin-top: 56px;
     padding: 25px 125px 19px 51px;
+    position: relative;
 }
 .title_wrapper .title_content .top_text{
     font-family: OpenSans;
@@ -239,7 +240,7 @@ footer.mk_footer #f_contact {
     font-weight: 600;
     font-style: normal;
     font-stretch: normal;
-    line-height: 2;
+    line-height: 14px;
     letter-spacing: normal;
     text-align: left;
     color: #ffffff;
@@ -261,4 +262,32 @@ footer.mk_footer #f_contact {
 .logged-in .searchbar form label .search_field::placeholder {
     color: #7cc248;
     background-color: #fff;
+}
+.logged-in .color_block {
+    display: -webkit-box;
+}
+.logged-in .color_block .color_block_title.purple {
+    background-color: #9474b5;
+}
+.logged-in .color_block .color_block_title.red {
+    background-color: #f15a55;
+}
+.logged-in .color_block .color_block_title.green {
+    background-color: #97c452;
+}
+.logged-in .color_block .color_block_title{
+    width: 33%;
+    font-family: SourceSansPro;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 12px;
+    letter-spacing: normal;
+    text-align: center;
+    padding: 28px 0 22px;
+    color: #ffffff;
+}
+.logged-in .color_block .color_block_title:last-child{
+    width: 34%;
 }

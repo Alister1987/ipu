@@ -638,6 +638,17 @@ if(!$parent_page) {
                           Member’s Page
                         </div>
                       </div>
+                      <div class="color_block">
+                        <div class="color_block_title purple">
+                          GARDA VETTING
+                        </div>
+                        <div class="color_block_title red">
+                          SOPs and Guidelines
+                        </div>
+                        <div class="color_block_title green">
+                          Medicines Authentication
+                        </div>
+                      </div>
                     </div>
 					<?php if (!$thank_you_page) { ?>
 
