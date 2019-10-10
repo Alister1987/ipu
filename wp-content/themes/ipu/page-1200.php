@@ -454,6 +454,43 @@ get_header();
         </div>
         </section>
         </div>
+      <div class="socials_wrap">
+        <div class="social_title">
+          Follow us
+        </div>
+        <div class="social">
+          <div class="social_image">
+            <img src="<?php bloginfo('template_directory'); ?>/img/social_tw.svg">
+          </div>
+          <div class="social_image_title">
+            Twitter
+          </div>
+        </div>
+        <div class="social">
+          <div class="social_image">
+            <img src="<?php bloginfo('template_directory'); ?>/img/social_fb.svg">
+          </div>
+          <div class="social_image_title">
+            Facebook
+          </div>
+        </div>
+        <div class="social">
+          <div class="social_image">
+            <img src="<?php bloginfo('template_directory'); ?>/img/social_in.svg">
+          </div>
+          <div class="social_image_title">
+            Linkedin
+          </div>
+        </div>
+        <div class="social">
+          <div class="social_image">
+            <img src="<?php bloginfo('template_directory'); ?>/img/social_yt.svg">
+          </div>
+          <div class="social_image_title">
+            Youtube
+          </div>
+        </div>
+      </div>
     </article>
 
 
