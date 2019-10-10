@@ -177,7 +177,7 @@ $startTime = round(microtime(true) * 1000);
                     <div>What's new</div>
                     Ongoing Issues
                   </div>
-                  <div class="white_block_wrapper">
+                  <div class="white_block_wrapper black_btn">
                     <div class="white_block">
                       <div class="title_1">
                         Ongoing Issues
@@ -237,6 +237,55 @@ $startTime = round(microtime(true) * 1000);
                       </div>
                     </div>
                   </div>
+                  <section class="mkh_about" id="who-we-are">
+                    <div class="box_wrapper box_green">
+                      <div class="box_inside">
+                        <h4>Ongoing Issues</h4>
+                        <h3>Preferred Drugs Initiative</h3>
+                        <div class="box_content">
+                          Integer leo augue, euismod in fermentum et, ultrices vel metus. Nam mattis nisi ut velit ornare, ac dictum ex efficitur. Aenean consectetur nunc dictum porta semper. Integer leo augue, euismod in fermentum et, ultrices vel metus. Nam mattis nisi ut velit ornare, ac dictum ex efficitur. Aenean consectetur nunc dictum porta semper.
+                        </div>
+                        <div class="box_action">
+                          <a href="#" class="btn btn_action_go">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box_wrapper box_w_green">
+                      <div class="box-video blue_circle">
+                        <div class="blue_ellipse">
+                          <div class="title">
+                            REMEMBER
+                          </div>
+                          <div class="desc">
+                            Praesent
+                            vitae nunc ac
+                            nunc interdum
+                            aliquet
+                          </div>
+                        </div>
+                        <img src="<?php bloginfo('template_directory'); ?>/img/offset-comp-785294.png" alt="IPU" class="logo_header">
+                      </div>
+                    </div>
+                  </section>
+                  <section class="mkh_about box_purple" id="who-we-are">
+                    <div class="box_wrapper box_w_green">
+                      <div class="box-video blue_circle">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/screen-shot-2019-07-03-at-10-05-49.png" alt="IPU" class="logo_header">
+                      </div>
+                    </div>
+                    <div class="box_wrapper box_purple">
+                      <div class="box_inside">
+                        <h4>Current Issues</h4>
+                        <h3>Latest on Brexit</h3>
+                        <div class="box_content">
+                          Integer leo augue, euismod in fermentum et, ultrices vel metus. Nam mattis nisi ut velit ornare, ac dictum ex efficitur. Aenean consectetur nunc dictum porta semper. Integer leo augue, euismod in fermentum et, ultrices vel metus. Nam mattis nisi ut velit ornare, ac dictum ex efficitur. Aenean consectetur nunc dictum porta semper.
+                        </div>
+                        <div class="box_action">
+                          <a href="#" class="btn btn_action_go">Learn More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
             </div>
 
