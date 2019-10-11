@@ -105,7 +105,7 @@ $startTime = round(microtime(true) * 1000);
                     <div>What's new</div>
                     Current issues
                   </div>
-                  <div class="white_block_wrapper">
+                  <div class="white_block_wrapper black_btn">
                     <div class="white_block">
                       <div class="title_1">
                         Current Issues

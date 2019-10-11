@@ -359,7 +359,7 @@ footer.mk_footer #f_contact {
 .logged-in .white_block_header div{
     color: #000000;
 }
-.logged-in .box_wrapper .box_inside .box_action{
+.logged-in .box_wrapper .box_inside .white_block_wrapper .box_action{
     width: 182px;
     margin: 29px auto 0;
     float: none;
@@ -371,13 +371,13 @@ footer.mk_footer #f_contact {
 .logged-in .box_wrapper .box_inside .box_action .btn{
     white-space: nowrap;
 }
-.logged-in .btn_action_go:before{
+.logged-in .white_block_wrapper .btn_action_go:before{
     background: url(img/icon_action_rightarrow_grey.svg) center center no-repeat;
     right: 18px;
 }
-.logged-in #content_wrapper .black_btn .btn_action_go{
-    border-color: #353535;
-    border-radius: 5px;
+.logged-in .white_block_wrapper.black_btn .btn_action_go{
+    border-color: #353535 !important;
+    border-radius: 5px !important;
 }
 .logged-in .white_block_wrapper .white_block .title_2{
     padding: 0 30px;
@@ -404,4 +404,14 @@ footer.mk_footer #f_contact {
 }
 .logged-in .prescribe_block{
     background-color: #f15a55;
+}
+.logged-in .blue_ellipse {
+    padding: 56px 34px;
+}
+.logged-in .blue_ellipse .title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.logged-in .blue_ellipse .desc{
+    font-size: 18px;
 }
