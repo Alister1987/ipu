@@ -2,6 +2,9 @@
     font-size: medium !important;
 }
 
+.box_wrapper.box_green{
+    background-color: #7cc248;
+}
 #catapult-cookie-bar a {
     color: #ffffff;
     font-size: medium !important;
@@ -22,6 +25,32 @@ footer.mk_footer #f_contact {
 /*    display: none;*/
 /*}*/
 @media all and (max-width: 425px){
+    .logged-in .mkh_about {
+        display: block !important;
+    }
+    .logged-in .box_wrapper {
+        width: 100%;
+    }
+    .logged-in #content_wrapper .btn_action_go {
+        width: 182px !important;
+        margin: 0 auto;
+    }
+    .logged-in #tabs {
+        display: none;
+    }
+    .logged-in .white_block_wrapper {
+        padding: 0 0 79px;
+    }
+    .logged-in.home #content_wrapper,
+    .logged-in .title_wrapper .title_content {
+        margin-top: 0;
+    }
+    .logged-in #main_img .title_wrapper {
+        padding: 0;
+    }
+    .logged-in .sidebar.two_column, .logged-in #main_img {
+        display: block;
+    }
     .socials_wrap{
         padding: 36px 25px 80px;
         width: 100%;
@@ -66,6 +95,9 @@ footer.mk_footer #f_contact {
     .home #content_wrapper {
         margin-top: 100px;
     }
+    .logged-in .prescribe_block .percent_block {
+        display: table;
+    }
     .prescribe_block .percent_block {
         margin: auto;
         display: inline;
@@ -76,8 +108,24 @@ footer.mk_footer #f_contact {
     .box_wrapper .box_inside .box_action {
         width: auto !important;
     }
-    .box_wrapper .box_inside {
-        padding: 64px 20px 79px !important;
+    .logged-in > .box_wrapper .box_inside{
+        padding: 64px 0px 79px !important;
+    }
+    .logged-in #who-we-are .box_wrapper .box_inside{
+        padding: 64px 20px;
+    }
+    .logged-in .blue_ellipse {
+        padding: 36px 34px !important;
+        right: 5px;
+        width: 151px !important;
+        height: 151px !important;
+    }
+    .logged-in .blue_ellipse .title {
+        font-size: 11px !important;
+    }
+    .logged-in .blue_ellipse .title,
+    .logged-in .blue_ellipse .desc {
+        font-size: 11px !important;
     }
 }
 @media all and (min-width: 426px){
@@ -90,6 +138,15 @@ footer.mk_footer #f_contact {
     footer #f_sitemap .f_sitemap_quicklinks {
         visibility: hidden;
     }
+    .logged-in .color_block {
+        display: -webkit-box;
+    }
+    .logged-in .color_block .color_block_title:last-child{
+        width: 34%;
+    }
+    .logged-in .color_block .color_block_title{
+        width: 33%;
+    }
 }
 @media all and (min-width: 426px) and (max-width: 768px){
     .white_block_wrapper .white_block {
@@ -97,6 +154,9 @@ footer.mk_footer #f_contact {
     }
 }
 @media all and (min-width: 769px){
+    .logged-in .prescribe_block .desc_block{
+        width: 640px;
+    }
     .white_block_wrapper {
         padding: 0 21px 79px;
     }
@@ -125,7 +185,7 @@ footer.mk_footer #f_contact {
         margin: 0 auto;
     }
 }
-@media (max-width: 1280px) {
+@media (min-width: 769px) and (max-width: 1280px) {
     .logged-in #main_img #main_menu_hero {
         width: 20%;
     }
@@ -171,7 +231,7 @@ footer.mk_footer #f_contact {
     overflow: hidden;
 }
 .prescribe_block .percent_block{
-    width: 100px;
+    width: 76px;
     margin: 0 auto;
     font-family: Open Sans;
     font-size: 60px;
@@ -333,9 +393,6 @@ footer.mk_footer #f_contact {
     color: #7cc248;
     background-color: #fff;
 }
-.logged-in .color_block {
-    display: -webkit-box;
-}
 .logged-in .color_block .color_block_title.purple {
     background-color: #9474b5;
 }
@@ -346,8 +403,8 @@ footer.mk_footer #f_contact {
     background-color: #97c452;
 }
 .logged-in .color_block .color_block_title{
-    width: 33%;
     font-family: Open Sans;
+    text-transform: uppercase;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
@@ -357,9 +414,6 @@ footer.mk_footer #f_contact {
     text-align: center;
     padding: 28px 0 22px;
     color: #ffffff;
-}
-.logged-in .color_block .color_block_title:last-child{
-    width: 34%;
 }
 .logged-in .white_block_header{
     font-family: Open Sans;
@@ -417,9 +471,6 @@ footer.mk_footer #f_contact {
 }
 .logged-in .prescribe_block .percent_block{
     top:auto;
-}
-.logged-in .prescribe_block .desc_block{
-    width: 640px;
 }
 .logged-in .prescribe_block{
     background-color: #f15a55;
