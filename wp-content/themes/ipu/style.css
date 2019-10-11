@@ -173,7 +173,7 @@ footer.mk_footer #f_contact {
 .prescribe_block .percent_block{
     width: 100px;
     margin: 0 auto;
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 60px;
     font-weight: 600;
     font-style: normal;
@@ -186,7 +186,7 @@ footer.mk_footer #f_contact {
 }
 .prescribe_block .desc_block{
     position: relative;
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 24px;
     font-weight: normal;
     font-style: normal;
@@ -224,7 +224,7 @@ footer.mk_footer #f_contact {
 }
 .white_block_wrapper .white_block .desc{
     padding-top: 4px;
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -242,7 +242,7 @@ footer.mk_footer #f_contact {
 .white_block_header {
     background-color: #fff;
     padding-top: 38px;
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 22px;
     font-weight: bold;
     font-style: normal;
@@ -270,7 +270,7 @@ footer.mk_footer #f_contact {
 }
 .blue_ellipse .title,
 .blue_ellipse .desc{
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -292,7 +292,7 @@ footer.mk_footer #f_contact {
     position: relative;
 }
 .title_wrapper .title_content .top_text{
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 29.5px;
     font-weight: bold;
     font-style: normal;
@@ -305,7 +305,7 @@ footer.mk_footer #f_contact {
 .title_wrapper .title_content .bottom_text{
     position: absolute;
     bottom: 0;
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: 600;
     font-style: normal;
@@ -347,7 +347,7 @@ footer.mk_footer #f_contact {
 }
 .logged-in .color_block .color_block_title{
     width: 33%;
-    font-family: SourceSansPro;
+    font-family: Open Sans;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
@@ -362,7 +362,7 @@ footer.mk_footer #f_contact {
     width: 34%;
 }
 .logged-in .white_block_header{
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 22px;
     font-weight: bold;
     font-style: normal;
@@ -385,7 +385,7 @@ footer.mk_footer #f_contact {
     display: flex;
 }
 .logged-in .box_wrapper .box_inside {
-    padding: 0;
+    padding: 69px 0;
 }
 .logged-in .box_wrapper .box_inside .box_action .btn{
     white-space: nowrap;
@@ -405,7 +405,7 @@ footer.mk_footer #f_contact {
     line-height: 1.09;
 }
 .logged-in .white_block_wrapper .white_block{
-    font-family: OpenSans;
+    font-family: Open Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -419,7 +419,7 @@ footer.mk_footer #f_contact {
     top:auto;
 }
 .logged-in .prescribe_block .desc_block{
-    width: 624px;
+    width: 640px;
 }
 .logged-in .prescribe_block{
     background-color: #f15a55;
