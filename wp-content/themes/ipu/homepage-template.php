@@ -490,6 +490,70 @@ $startTime = round(microtime(true) * 1000);
 					?>
                 </div>
             </div>
+          <div class="articles_wrap">
+            <div class="articles_header">
+              Article Directory
+            </div>
+            <div class="articles_block">
+              <div class="title_1">
+                Medicines Authentication
+              </div>
+              <div class="title_2">
+                Poster
+              </div>
+              <div class="title_3">
+                <span>Date:</span> 22/10/18
+              </div>
+              <div class="btn_block">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="articles_block">
+              <div class="title_1">
+                FAQ Medicines Authentication
+              </div>
+              <div class="title_2">
+                Article
+              </div>
+              <div class="title_3">
+                <span>Date:</span> 22/10/18
+              </div>
+              <div class="btn_block">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="articles_block">
+              <div class="title_1">
+                Medicines Authentication
+              </div>
+              <div class="title_2">
+                Poster
+              </div>
+              <div class="title_3">
+                <span>Date:</span> 22/10/18
+              </div>
+              <div class="btn_block">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="articles_block">
+              <div class="title_1">
+                FAQ Medicines Authentication
+              </div>
+              <div class="title_2">
+                Article
+              </div>
+              <div class="title_3">
+                <span>Date:</span> 22/10/18
+              </div>
+              <div class="btn_block">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="after_article">
+            <a href="#" class="btn btn_action_go">View More</a>
+          </div>
         </section>
     </article>
 <?php

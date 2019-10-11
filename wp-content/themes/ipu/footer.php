@@ -45,6 +45,7 @@ if (is_user_logged_in()) { ?>
 			$bgimage = wp_get_attachment_image_src($bgimage_url, 'high', true);
 			$title = $fields["title"];
 			$subtitle = $fields["subtitle"];
+			/*
 			?>
             <section id="f_cta_picture" style="background-image: url('<?=$bgimage[0];?>');">
                 <div class="f_overlay">
@@ -78,10 +79,12 @@ if (is_user_logged_in()) { ?>
                 </div>
             </section>
 		<?php
+      */
 		   endwhile; 
         endif; // if have_posts()
         wp_reset_query();
 		wp_reset_postdata();
+		/*
 		?>
         <section id="f_contact">
             <div class="f_contact_wrapper">
@@ -116,6 +119,7 @@ if (is_user_logged_in()) { ?>
             </div>
         </section>
 		<?php
+    */
 		/***************
 		// registered user footer
 		 ***************/
