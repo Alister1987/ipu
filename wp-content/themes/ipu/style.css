@@ -81,6 +81,7 @@ footer.mk_footer #f_contact {
     .socials_wrap .social .social_image_title {
         font-size: 16px;
         margin-top: 2px;
+        color: #3D3D4C;
     }
     .white_block_header {
         padding: 47px 39px 12px !important;

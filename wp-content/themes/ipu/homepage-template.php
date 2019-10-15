@@ -568,35 +568,35 @@ $startTime = round(microtime(true) * 1000);
             </div>
             <div class="social">
               <div class="social_image">
-                <img src="http://ipu.local/wp-content/themes/ipu/img/social_tw.svg">
+                <img src="<?php bloginfo('template_directory'); ?>/img/social_tw.svg">
               </div>
-              <div class="social_image_title">
+              <a href="#" class="social_image_title">
                 Twitter
-              </div>
+              </a>
             </div>
             <div class="social">
               <div class="social_image">
-                <img src="http://ipu.local/wp-content/themes/ipu/img/social_fb.svg">
+                <img src="<?php bloginfo('template_directory'); ?>/img/social_fb.svg">
               </div>
-              <div class="social_image_title">
+              <a href="#" class="social_image_title">
                 Facebook
-              </div>
+              </a>
             </div>
             <div class="social">
               <div class="social_image">
-                <img src="http://ipu.local/wp-content/themes/ipu/img/social_in.svg">
+                <img src="<?php bloginfo('template_directory'); ?>/img/social_in.svg">
               </div>
-              <div class="social_image_title">
+              <a href="#" class="social_image_title">
                 Linkedin
-              </div>
+              </a>
             </div>
             <div class="social">
               <div class="social_image">
-                <img src="http://ipu.local/wp-content/themes/ipu/img/social_yt.svg">
+                <img src="<?php bloginfo('template_directory'); ?>/img/social_yt.svg">
               </div>
-              <div class="social_image_title">
+              <a href="#" class="social_image_title">
                 Youtube
-              </div>
+              </a>
             </div>
           </div>
         </section>
