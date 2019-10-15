@@ -59,12 +59,12 @@ footer.mk_footer #f_contact {
         display: block;
     }
     .socials_wrap{
-        padding: 36px 25px 80px;
+        padding: 36px 25px 100px;
         width: 100%;
     }
     .socials_wrap .social_title{
         font-family: BG Bld;
-        font-size: 16px;
+        font-size: 20px;
         color: #5b5a68;
         text-transform: uppercase;
         letter-spacing: .05em;
@@ -194,7 +194,7 @@ footer.mk_footer #f_contact {
     }
 }
 @media all and (min-width: 426px){
-    .logged-in .mobile_news #tabs,
+    .logged-in .mobile_news,
     .socials_wrap,
     .sidebar_block .sidebar.two_column {
         display: none;
