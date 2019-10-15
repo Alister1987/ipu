@@ -554,6 +554,14 @@ $startTime = round(microtime(true) * 1000);
           <div class="after_article">
             <a href="#" class="btn btn_action_go">View More</a>
           </div>
+          <div class="mobile_news">
+            <div id="content_wrapper">
+              <div class="news_content">
+                <h3>Latest News</h3>
+                  <?php include('more-data2.php');?>
+              </div>
+            </div>
+          </div>
         </section>
     </article>
 <?php
