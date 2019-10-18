@@ -37,21 +37,32 @@ get_header();
 		 * Content
 		 *
 		 * ***********/
+    $field_data = get_field('right_content');
 		?>
         <div class="content lp_content eight_column mk_home_content content_same_height">
 
             <section class="mkh_about video" id="who-we-are">
                 <div class="box_wrapper box_purple">
-                  <div class="box_inside">
-                    <h4>Think Pharmacy</h4>
-                    <h3>What can you go to the pharmacy for?</h3>
-                    <div class="box_content">
-                      The pharmacy can provide you with a range of services, from practical advice on common ailments to explanations on medication interactions and much more. Your  pharmacist is a healthcare professional who can assist you with your health concerns quickly. They will also guide you to other health professionals or community services, if required.
-                    </div>
-                    <div class="box_action">
-                      <a href="#" class="btn btn_action_go">Learn More</a>
-                    </div>
-                  </div>
+                    <?php
+                    if (isset($field_data[0])):
+                        $block_data = $field_data[0];
+                        $title = $block_data['title'];
+                        $description = $block_data['description'];
+                        $subtitle = $block_data['subtitle'];
+                        $link_title = $block_data['link_title'];
+                        $link_url = $block_data['link_url'];
+                        ?>
+                      <div class="box_inside">
+                        <h4><?= $subtitle; ?></h4>
+                        <h3><?= $title; ?></h3>
+                        <div class="box_content"><?= $description; ?></div>
+                        <div class="box_action">
+                          <a href="<?= $link_url; ?>" class="btn btn_action_go"><?= $link_title; ?></a>
+                        </div>
+                      </div>
+                    <?php
+                    endif;
+                    ?>
                 </div>
                 <div class="box_wrapper box_w_green">
                   <div class="box-video">
@@ -150,23 +161,35 @@ get_header();
                 </div>
               </div>
               <div class="box_wrapper box_green">
-                <div class="box_inside">
-                  <h4>Think Pharmacy</h4>
-                  <h3>What can you go to the pharmacy for?</h3>
-                  <div class="box_content">
-                    The pharmacy can provide you with a range of services, from practical advice on common ailments to explanations on medication interactions and much more. Your  pharmacist is a healthcare professional who can assist you with your health concerns quickly. They will also guide you to other health professionals or community services, if required.
-                  </div>
-                  <div class="box_action">
-                    <a href="#" class="btn btn_action_go">Learn More</a>
-                  </div>
-                </div>
+                  <?php
+                  if (isset($field_data[1])):
+                      $block_data = $field_data[1];
+                      $title = $block_data['title'];
+                      $description = $block_data['description'];
+                      $subtitle = $block_data['subtitle'];
+                      $link_title = $block_data['link_title'];
+                      $link_url = $block_data['link_url'];
+                      ?>
+                    <div class="box_inside">
+                      <h4><?= $subtitle; ?></h4>
+                      <h3><?= $title; ?></h3>
+                      <div class="box_content"><?= $description; ?></div>
+                      <div class="box_action">
+                        <a href="<?= $link_url; ?>" class="btn btn_action_go"><?= $link_title; ?></a>
+                      </div>
+                    </div>
+                  <?php
+                  endif;
+                  ?>
               </div>
             </section>
             <section class="mkh_about" id="who-we-are">
 
-              <div class="box_wrapper box_purple">
+              <div class="box_wrapper box_purple asdasasdasd">
                   <?php
+                  /*
                   $second = 'right_content';
+
                   if (get_field($second)):
                       while (have_rows($second)) : the_row();
                           //$title = get_sub_field('title');
@@ -189,6 +212,27 @@ get_header();
                   endif;
                   wp_reset_query();
                   wp_reset_postdata();
+                  */
+                  ?>
+                  <?php
+                  if (isset($field_data[2])):
+                          $block_data = $field_data[2];
+                          $title = $block_data['title'];
+                          $description = $block_data['description'];
+                          $subtitle = $block_data['subtitle'];
+                          $link_title = $block_data['link_title'];
+                          $link_url = $block_data['link_url'];
+                          ?>
+                        <div class="box_inside">
+                          <h4><?= $subtitle; ?></h4>
+                          <h3><?= $title; ?></h3>
+                          <div class="box_content"><?= $description; ?></div>
+                          <div class="box_action">
+                            <a href="<?= $link_url; ?>" class="btn btn_action_go"><?= $link_title; ?></a>
+                          </div>
+                        </div>
+                  <?php
+                  endif;
                   ?>
               </div>
               <div class="box_wrapper box_w_green">
