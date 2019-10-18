@@ -454,43 +454,31 @@ get_header();
         </div>
         </section>
         </div>
-      <div class="socials_wrap">
-        <div class="social_title">
-          Follow us
-        </div>
-        <div class="social">
-          <div class="social_image">
-            <img src="<?php bloginfo('template_directory'); ?>/img/social_tw.svg">
+        <?php
+        if (get_field('social_icons')):
+        ?>
+          <div class="socials_wrap">
+            <div class="social_title">
+              Follow us
+            </div>
+            <?php
+            while (have_rows('social_icons')) : the_row();
+                ?>
+              <div class="social">
+                <div class="social_image">
+                  <img src="<?php bloginfo('template_directory'); ?>/img/<?php echo get_sub_field('image')?>">
+                </div>
+                <a href="<?php echo get_sub_field('link')?>" class="social_image_title">
+                    <?php echo get_sub_field('title')?>
+                </a>
+              </div>
+            <?php
+            endwhile;
+                ?>
           </div>
-          <a href="#" class="social_image_title">
-            Twitter
-          </a>
-        </div>
-        <div class="social">
-          <div class="social_image">
-            <img src="<?php bloginfo('template_directory'); ?>/img/social_fb.svg">
-          </div>
-          <a href="#" class="social_image_title">
-            Facebook
-          </a>
-        </div>
-        <div class="social">
-          <div class="social_image">
-            <img src="<?php bloginfo('template_directory'); ?>/img/social_in.svg">
-          </div>
-          <a href="#" class="social_image_title">
-            Linkedin
-          </a>
-        </div>
-        <div class="social">
-          <div class="social_image">
-            <img src="<?php bloginfo('template_directory'); ?>/img/social_yt.svg">
-          </div>
-          <a href="#" class="social_image_title">
-            Youtube
-          </a>
-        </div>
-      </div>
+        <?php
+        endif;
+        ?>
     </article>
 
 
