@@ -73,9 +73,9 @@ get_header();
           <div class="prescribe_block">
             <div class="desc_block">
               <div class="percent_block">
-                96%
+                <?php echo get_field('percent_value');?>%
               </div>
-              of people are in favour of pharmacists being able to prescribe some medicines for minor ailments.
+              <?php echo get_field('percent_text');?>
             </div>
           </div>
           <div class="white_block_header">
@@ -83,63 +83,29 @@ get_header();
             Common Ailments the pharmacy can help with
           </div>
           <div class="white_block_wrapper">
-            <div class="white_block">
-              <div class="img_wrap">
-                <img src="<?php bloginfo('template_directory'); ?>/img/icon-1.png" alt="IPU" class="logo_header">
-              </div>
-              <div class="title_1">
-                Think Pharmacy
-              </div>
-              <div class="title_2">
-                Cold & Flu
-              </div>
-              <div class="desc">
-                Colds are caused by a virus they are often confused with flu. Learn how to take care of someone with flu.
-              </div>
-            </div>
-            <div class="white_block">
-              <div class="img_wrap">
-                <img src="<?php bloginfo('template_directory'); ?>/img/icon-2.png" alt="IPU" class="logo_header">
-              </div>
-              <div class="title_1">
-                Think Pharmacy
-              </div>
-              <div class="title_2">
-                Sore Tummy
-              </div>
-              <div class="desc">
-                Your pharmascist can help show you how to get through a bout of vomiting, diarrhoea, or both.
-              </div>
-            </div>
-            <div class="white_block">
-              <div class="img_wrap">
-                <img src="<?php bloginfo('template_directory'); ?>/img/icon-3.png" alt="IPU" class="logo_header">
-              </div>
-              <div class="title_1">
-                Think Pharmacy
-              </div>
-              <div class="title_2">
-                Chronic Illness
-              </div>
-              <div class="desc">
-                How to manage chronic illnesses,
-                such as diabetes, asthma and cardiovascular disease.
-              </div>
-            </div>
-            <div class="white_block">
-              <div class="img_wrap">
-                <img src="<?php bloginfo('template_directory'); ?>/img/icon-4.png" alt="IPU" class="logo_header">
-              </div>
-              <div class="title_1">
-                Think Pharmacy
-              </div>
-              <div class="title_2">
-                Lifestyle Help
-              </div>
-              <div class="desc">
-                Your local pharmacy can guide you in how to manage your weight or quit smoking.
-              </div>
-            </div>
+              <?php
+              if (get_field('pharmacy_ailments')):
+                  while (have_rows('pharmacy_ailments')) : the_row();
+//              echo __FILE__.' '.__LINE__.'<pre>';print_r(get_sub_field('image')).'</pre>';die;
+                      ?>
+                    <div class="white_block">
+                      <div class="img_wrap">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/<?php echo get_sub_field('image')?>" alt="IPU" class="logo_header">
+                      </div>
+                      <div class="title_1">
+                        <?php echo get_sub_field('title_1')?>
+                      </div>
+                      <div class="title_2">
+                        <?php echo get_sub_field('title_2')?>
+                      </div>
+                      <div class="desc">
+                        <?php echo get_sub_field('description')?>
+                      </div>
+                    </div>
+                  <?php
+                  endwhile;
+              endif;
+              ?>
           </div>
             <section class="mkh_about" id="who-we-are">
               <div class="box_wrapper box_w_green">
@@ -215,6 +181,7 @@ get_header();
                   */
                   ?>
                   <?php
+//                  echo __FILE__.' '.__LINE__.'<pre>';print_r(get_fields()).'</pre>';die;
                   if (isset($field_data[2])):
                           $block_data = $field_data[2];
                           $title = $block_data['title'];
