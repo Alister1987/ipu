@@ -632,22 +632,24 @@ if(!$parent_page) {
                     <div class="title_wrapper">
                       <div class="title_content">
                         <div class="top_text">
-                          Welcome
+                          <?php echo get_field('title')?>
                         </div>
                         <div class="bottom_text">
-                          Member’s Page
+                          <?php echo get_field('sub_title')?>
                         </div>
                       </div>
                       <div class="color_block">
-                        <div class="color_block_title purple">
-                          GARDA VETTING
-                        </div>
-                        <div class="color_block_title red">
-                          SOPs and Guidelines
-                        </div>
-                        <div class="color_block_title green">
-                          Medicines Authentication
-                        </div>
+                          <?php
+                          if (get_field('color_blocks')):
+                              while (have_rows('color_blocks')) : the_row();
+                                  ?>
+                                <div class="color_block_title" style="background-color: <?php echo get_sub_field('color')?>">
+                                  <a href="<?php echo get_sub_field('link')?>"><?php echo get_sub_field('title')?></a>
+                                </div>
+                              <?php
+                              endwhile;
+                          endif;
+                          ?>
                       </div>
                     </div>
 					<?php if (!$thank_you_page) { ?>

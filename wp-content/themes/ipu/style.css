@@ -214,6 +214,9 @@ footer.mk_footer #f_contact {
     .logged-in .color_block .color_block_title{
         width: 33%;
     }
+    .logged-in .color_block .color_block_title a{
+        color: #fff;
+    }
 }
 @media all and (min-width: 426px) and (max-width: 768px){
     .white_block_wrapper .white_block {

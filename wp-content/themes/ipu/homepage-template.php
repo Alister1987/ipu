@@ -13,6 +13,8 @@ $email = $current_user->user_email;
 //print_r('<pre>');
 //print_r($bio);
 $startTime = round(microtime(true) * 1000);
+$field_data = get_field('right_content');
+//echo __FILE__.' '.__LINE__.'<pre>';print_r($field_data).'</pre>';die;
 ?>
     <style>
         .a-resources {width: 100%; margin-bottom: 20px;}
@@ -100,155 +102,102 @@ $startTime = round(microtime(true) * 1000);
 					endwhile;
 					wp_reset_postdata();
           */
+//                  echo __FILE__.' '.__LINE__.'<pre>';print_r(get_fields()).'</pre>';die;
 					?>
+                    <?php
+                    if (get_field('current_issues')):
+                    ?>
                   <div class="white_block_header">
                     <div>What's new</div>
                     Current issues
                   </div>
                   <div class="white_block_wrapper black_btn">
-                    <div class="white_block">
-                      <div class="title_1">
-                        Current Issues
-                      </div>
-                      <div class="title_2">
-                        Latest on
-                        Brexit
-                      </div>
-                      <div class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
-                      </div>
-                      <div class="box_action">
-                        <a href="#" class="btn btn_action_go">Learn More</a>
-                      </div>
+                    <?php
+                        while (have_rows('current_issues')) : the_row();
+                            ?>
+                          <div class="white_block">
+                            <div class="title_1">
+                              Current Issues
+                            </div>
+                            <div class="title_2">
+                                <?php echo get_sub_field('title')?>
+                            </div>
+                            <div class="desc">
+                                <?php echo get_sub_field('description')?>
+                            </div>
+                            <div class="box_action">
+                              <a href="<?php echo get_sub_field('button_link')?>" class="btn btn_action_go"><?php echo get_sub_field('button_title')?></a>
+                            </div>
+                          </div>
+                        <?php
+                        endwhile;
+                    ?>
                     </div>
-                    <div class="white_block">
-                      <div class="title_1">
-                        Current Issues
-                      </div>
-                      <div class="title_2">
-                        Medicines Authentication
-                      </div>
-                      <div class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
-                      </div>
-                      <div class="box_action">
-                        <a href="#" class="btn btn_action_go">Learn More</a>
-                      </div>
-                    </div>
-                    <div class="white_block">
-                      <div class="title_1">
-                        Current Issues
-                      </div>
-                      <div class="title_2">
-                        GMS Phased Dispensing
-                      </div>
-                      <div class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
-                      </div>
-                      <div class="box_action">
-                        <a href="#" class="btn btn_action_go">Learn More</a>
-                      </div>
-                    </div>
-                    <div class="white_block">
-                      <div class="title_1">
-                        Current Issues
-                      </div>
-                      <div class="title_2">
-                        European
-                        Elections
-                      </div>
-                      <div class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
-                      </div>
-                      <div class="box_action">
-                        <a href="#" class="btn btn_action_go">Learn More</a>
-                      </div>
-                    </div>
-                  </div>
+                    <?php
+                    endif;
+                    ?>
                   <div class="prescribe_block">
                     <div class="desc_block">
                       <div class="percent_block">
                         <img src="<?php bloginfo('template_directory'); ?>/img/vector-smart-object.png">
                       </div>
-                      IMPORTANT — Suspendisse ligula nulla, viverra vitae vulputate id, luctus ut eros. Etiam consequat libero justo.
+                      <?php echo get_field('red_text')?>
                     </div>
                   </div>
-                  <div class="white_block_header">
-                    <div>What's new</div>
-                    Ongoing Issues
-                  </div>
-                  <div class="white_block_wrapper black_btn">
-                    <div class="white_block">
-                      <div class="title_1">
+                    <?php
+                    if (get_field('ongoing_issues')):
+                        ?>
+                      <div class="white_block_header">
+                        <div>What's new</div>
                         Ongoing Issues
                       </div>
-                      <div class="title_2">
-                        PSI Issues
+                      <div class="white_block_wrapper black_btn">
+                          <?php
+                          while (have_rows('ongoing_issues')) : the_row();
+                              ?>
+                            <div class="white_block">
+                              <div class="title_1">
+                                Ongoing Issues
+                              </div>
+                              <div class="title_2">
+                                  <?php echo get_sub_field('title')?>
+                              </div>
+                              <div class="desc">
+                                  <?php echo get_sub_field('description')?>
+                              </div>
+                              <div class="box_action">
+                                <a href="<?php echo get_sub_field('button_link')?>" class="btn btn_action_go"><?php echo get_sub_field('button_title')?></a>
+                              </div>
+                            </div>
+                          <?php
+                          endwhile;
+                          ?>
                       </div>
-                      <div class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam. Morbi ligula quam.
-                        Morbi ligula quam.
-                      </div>
-                      <div class="box_action">
-                        <a href="#" class="btn btn_action_go">Learn More</a>
-                      </div>
-                    </div>
-                    <div class="white_block">
-                      <div class="title_1">
-                        Ongoing Issues
-                      </div>
-                      <div class="title_2">
-                        Department of Health Issues
-                      </div>
-                      <div class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
-                      </div>
-                      <div class="box_action">
-                        <a href="#" class="btn btn_action_go">Learn More</a>
-                      </div>
-                    </div>
-                    <div class="white_block">
-                      <div class="title_1">
-                        Ongoing Issues
-                      </div>
-                      <div class="title_2">
-                        Preferred Drugs Initiative
-                      </div>
-                      <div class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
-                      </div>
-                      <div class="box_action">
-                        <a href="#" class="btn btn_action_go">Learn More</a>
-                      </div>
-                    </div>
-                    <div class="white_block">
-                      <div class="title_1">
-                        Ongoing Issues
-                      </div>
-                      <div class="title_2">
-                        IPHA
-                        Agreement 2016
-                      </div>
-                      <div class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ligula quam.
-                      </div>
-                      <div class="box_action">
-                        <a href="#" class="btn btn_action_go">Learn More</a>
-                      </div>
-                    </div>
-                  </div>
+                    <?php
+                    endif;
+                    ?>
                   <section class="mkh_about" id="who-we-are">
                     <div class="box_wrapper box_green">
-                      <div class="box_inside">
-                        <h4>Ongoing Issues</h4>
-                        <h3>Preferred Drugs Initiative</h3>
-                        <div class="box_content">
-                          Integer leo augue, euismod in fermentum et, ultrices vel metus. Nam mattis nisi ut velit ornare, ac dictum ex efficitur. Aenean consectetur nunc dictum porta semper. Integer leo augue, euismod in fermentum et, ultrices vel metus. Nam mattis nisi ut velit ornare, ac dictum ex efficitur. Aenean consectetur nunc dictum porta semper.
-                        </div>
-                        <div class="box_action">
-                          <a href="#" class="btn btn_action_go">Learn More</a>
-                        </div>
-                      </div>
+                        <?php
+                        if (isset($field_data[3])):
+                            $block_data = $field_data[3];
+                            $title = $block_data['title'];
+                            $description = $block_data['description'];
+                            $subtitle = $block_data['subtitle'];
+                            $link_title = $block_data['link_title'];
+                            $link_url = $block_data['link_url'];
+                            ?>
+                          <div class="box_inside">
+                            <h4><?= $subtitle; ?></h4>
+                            <h3><?= $title; ?></h3>
+                            <div class="box_content"><?= $description; ?></div>
+                            <div class="box_action">
+                              <a href="<?= $link_url; ?>" class="btn btn_action_go"><?= $link_title; ?></a>
+                            </div>
+                          </div>
+                        <?php
+                        endif;
+                        ?>
                     </div>
                     <div class="box_wrapper box_w_green">
                       <div class="box-video blue_circle">
@@ -274,16 +223,26 @@ $startTime = round(microtime(true) * 1000);
                       </div>
                     </div>
                     <div class="box_wrapper box_purple">
-                      <div class="box_inside">
-                        <h4>Current Issues</h4>
-                        <h3>Latest on Brexit</h3>
-                        <div class="box_content">
-                          Integer leo augue, euismod in fermentum et, ultrices vel metus. Nam mattis nisi ut velit ornare, ac dictum ex efficitur. Aenean consectetur nunc dictum porta semper. Integer leo augue, euismod in fermentum et, ultrices vel metus. Nam mattis nisi ut velit ornare, ac dictum ex efficitur. Aenean consectetur nunc dictum porta semper.
-                        </div>
-                        <div class="box_action">
-                          <a href="#" class="btn btn_action_go">Learn More</a>
-                        </div>
-                      </div>
+                        <?php
+                        if (isset($field_data[4])):
+                            $block_data = $field_data[4];
+                            $title = $block_data['title'];
+                            $description = $block_data['description'];
+                            $subtitle = $block_data['subtitle'];
+                            $link_title = $block_data['link_title'];
+                            $link_url = $block_data['link_url'];
+                            ?>
+                          <div class="box_inside">
+                            <h4><?= $title; ?></h4>
+                            <h3><?= $subtitle; ?></h3>
+                            <div class="box_content"><?= $description; ?></div>
+                            <div class="box_action">
+                              <a href="<?= $link_url; ?>" class="btn btn_action_go"><?= $link_title; ?></a>
+                            </div>
+                          </div>
+                        <?php
+                        endif;
+                        ?>
                     </div>
                   </section>
                 </div>
