@@ -38,6 +38,7 @@ get_header();
 		 *
 		 * ***********/
     $field_data = get_field('right_content');
+    $block_images_data = get_field('images');
 		?>
         <div class="content lp_content eight_column mk_home_content content_same_height">
 
@@ -64,11 +65,17 @@ get_header();
                     endif;
                     ?>
                 </div>
+                <?php
+                if (isset($block_images_data[0])):
+                ?>
                 <div class="box_wrapper box_w_green">
                   <div class="box-video">
-                    <img src="<?php bloginfo('template_directory'); ?>/img/video.png" alt="IPU" class="logo_header">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/<?php echo $block_images_data[0]['image']?>" alt="IPU" class="logo_header">
                   </div>
                 </div>
+                    <?php
+                endif;
+                    ?>
             </section>
           <div class="prescribe_block">
             <div class="desc_block">
@@ -86,7 +93,6 @@ get_header();
               <?php
               if (get_field('pharmacy_ailments')):
                   while (have_rows('pharmacy_ailments')) : the_row();
-//              echo __FILE__.' '.__LINE__.'<pre>';print_r(get_sub_field('image')).'</pre>';die;
                       ?>
                     <div class="white_block">
                       <div class="img_wrap">
@@ -109,22 +115,28 @@ get_header();
           </div>
             <section class="mkh_about" id="who-we-are">
               <div class="box_wrapper box_w_green">
-                <div class="box-video blue_circle">
+              <?php
+              if (isset($block_images_data[1])):
+                  ?>
+                <div class="box-video blue_circle"><?php
+                  if ($block_images_data[1]['small_text']):
+                      ?>
                   <div class="blue_ellipse">
                     <div class="title">
-                      REMEMBER
+                      <?php echo $block_images_data[1]['small_text_title']?>
                     </div>
                     <div class="desc">
-                      Your pharmacist is a
-                      healthcare professional.
-                      You can ask them for
-                      advice about any
-                      questions or
-                      concerns
+                      <?php echo $block_images_data[1]['small_text']?>
                     </div>
                   </div>
-                  <img src="<?php bloginfo('template_directory'); ?>/img/shutterstock-1218727069.png" alt="IPU" class="logo_header">
+                  <?php
+                  endif;
+                    ?>
+                  <img src="<?php bloginfo('template_directory'); ?>/img/<?php echo $block_images_data[1]['image']?>" alt="IPU" class="logo_header">
                 </div>
+              <?php
+              endif;
+              ?>
               </div>
               <div class="box_wrapper box_green">
                   <?php
@@ -151,37 +163,8 @@ get_header();
             </section>
             <section class="mkh_about" id="who-we-are">
 
-              <div class="box_wrapper box_purple asdasasdasd">
+              <div class="box_wrapper box_purple">
                   <?php
-                  /*
-                  $second = 'right_content';
-
-                  if (get_field($second)):
-                      while (have_rows($second)) : the_row();
-                          //$title = get_sub_field('title');
-                          $title = get_sub_field('title');
-                          $description = get_sub_field('description');
-                          $subtitle = get_sub_field('subtitle');
-                          $link_title = get_sub_field('link_title');
-                          $link_url = get_sub_field('link_url');
-                          ?>
-                        <div class="box_inside">
-                          <h4><?= $subtitle; ?></h4>
-                          <h3><?= $title; ?></h3>
-                          <div class="box_content"><?= $description; ?></div>
-                          <div class="box_action">
-                            <a href="<?= $link_url; ?>" class="btn btn_action_go"><?= $link_title; ?></a>
-                          </div>
-                        </div>
-                      <?php
-                      endwhile;
-                  endif;
-                  wp_reset_query();
-                  wp_reset_postdata();
-                  */
-                  ?>
-                  <?php
-//                  echo __FILE__.' '.__LINE__.'<pre>';print_r(get_fields()).'</pre>';die;
                   if (isset($field_data[2])):
                           $block_data = $field_data[2];
                           $title = $block_data['title'];
@@ -202,11 +185,17 @@ get_header();
                   endif;
                   ?>
               </div>
+            <?php
+            if (isset($block_images_data[2])):
+                ?>
               <div class="box_wrapper box_w_green">
                 <div class="box-video">
-                  <img src="<?php bloginfo('template_directory'); ?>/img/shutterstock-1091736332.png" alt="IPU" class="logo_header">
+                  <img src="<?php bloginfo('template_directory'); ?>/img/<?php echo $block_images_data[2]['image']?>" alt="IPU" class="logo_header">
                 </div>
               </div>
+            <?php
+            endif;
+            ?>
             </section>
 
           <div class="sidebar_block">
