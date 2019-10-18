@@ -600,7 +600,7 @@ if(!$parent_page) {
 			}
 			?>
 
-            <article id="main_img" <?php if(is_search()) { ?> class="mi_results" <?php } ?> style="background: url('<?php echo $thumb_url; ?>') center center no-repeat;">
+            <article id="main_img" <?php if(is_search()) { ?> class="mi_results" <?php } ?>>
 
                 <div class="hero_wrapper <?php echo $empty_header_class ?>">
 
