@@ -510,7 +510,7 @@ $block_images_data = get_field('images');
             endif;
             ?>
           <div class="after_article">
-            <a href="#" class="btn btn_action_go">View More</a>
+            <a href="<?php echo get_permalink('25909')?>" class="btn btn_action_go">View More</a>
           </div>
           <div class="mobile_news">
             <div id="content_wrapper">
