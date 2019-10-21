@@ -14,7 +14,8 @@ $email = $current_user->user_email;
 //print_r($bio);
 $startTime = round(microtime(true) * 1000);
 $field_data = get_field('right_content');
-//echo __FILE__.' '.__LINE__.'<pre>';print_r($field_data).'</pre>';die;
+$block_images_data = get_field('images');
+//echo __FILE__.' '.__LINE__.'<pre>';print_r(get_fields()).'</pre>';die;
 ?>
     <style>
         .a-resources {width: 100%; margin-bottom: 20px;}
@@ -200,28 +201,57 @@ $field_data = get_field('right_content');
                         ?>
                     </div>
                     <div class="box_wrapper box_w_green">
+                      <?php
+                      if (isset($block_images_data[3])):
+                      ?>
                       <div class="box-video blue_circle">
+                          <?php
+                          if ($block_images_data[3]['small_text_title']):
+                              ?>
                         <div class="blue_ellipse">
                           <div class="title">
-                            REMEMBER
+                            <?php echo $block_images_data[3]['small_text_title']?>
                           </div>
                           <div class="desc">
-                            Praesent
-                            vitae nunc ac
-                            nunc interdum
-                            aliquet
+                              <?php echo $block_images_data[3]['small_text']?>
                           </div>
                         </div>
-                        <img src="<?php bloginfo('template_directory'); ?>/img/offset-comp-785294.png" alt="IPU" class="logo_header">
+                          <?php
+                          endif;
+                          ?>
+                        <img src="<?php bloginfo('template_directory'); ?>/img/<?php echo $block_images_data[3]['image']?>" alt="IPU" class="logo_header">
                       </div>
+                        <?php
+                        endif;
+                        ?>
                     </div>
                   </section>
                   <section class="mkh_about box_purple" id="who-we-are">
                     <div class="box_wrapper box_w_green">
-                      <div class="box-video blue_circle">
-                        <img src="<?php bloginfo('template_directory'); ?>/img/screen-shot-2019-07-03-at-10-05-49.png" alt="IPU" class="logo_header">
-                      </div>
-                    </div>
+                      <?php
+                      if (isset($block_images_data[4])):
+                          ?>
+                        <div class="box-video blue_circle">
+                            <?php
+                            if ($block_images_data[4]['small_text_title']):
+                                ?>
+                              <div class="blue_ellipse">
+                                <div class="title">
+                                    <?php echo $block_images_data[4]['small_text_title']?>
+                                </div>
+                                <div class="desc">
+                                    <?php echo $block_images_data[4]['small_text']?>
+                                </div>
+                              </div>
+                            <?php
+                            endif;
+                            ?>
+                          <img src="<?php bloginfo('template_directory'); ?>/img/<?php echo $block_images_data[4]['image']?>" alt="IPU" class="logo_header">
+                        </div>
+                      <?php
+                      endif;
+                      ?>
+                        </div>
                     <div class="box_wrapper box_purple">
                         <?php
                         if (isset($field_data[4])):
@@ -449,67 +479,36 @@ $field_data = get_field('right_content');
 					?>
                 </div>
             </div>
-          <div class="articles_wrap">
-            <div class="articles_header">
-              Article Directory
-            </div>
-            <div class="articles_block">
-              <div class="title_1">
-                Medicines Authentication
+            <?php
+            if (get_field('article_directory')): ?>
+              <div class="articles_wrap">
+                <div class="articles_header">
+                  Article Directory
+                </div>
+                <?php
+                while (have_rows('article_directory')) : the_row();
+                    ?>
+                  <div class="articles_block">
+                    <div class="title_1">
+                        <?php echo get_sub_field('title')?>
+                    </div>
+                    <div class="title_2">
+                        <?php echo get_sub_field('sub_title')?>
+                    </div>
+                    <div class="title_3">
+                      <span>Date:</span> <?php echo get_sub_field('date')?>
+                    </div>
+                    <div class="btn_block">
+                      <a href="<?php echo get_sub_field('button_link')?>"><?php echo get_sub_field('button_title')?></a>
+                    </div>
+                  </div>
+                <?php
+                endwhile;
+                ?>
               </div>
-              <div class="title_2">
-                Poster
-              </div>
-              <div class="title_3">
-                <span>Date:</span> 22/10/18
-              </div>
-              <div class="btn_block">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-            <div class="articles_block">
-              <div class="title_1">
-                FAQ Medicines Authentication
-              </div>
-              <div class="title_2">
-                Article
-              </div>
-              <div class="title_3">
-                <span>Date:</span> 22/10/18
-              </div>
-              <div class="btn_block">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-            <div class="articles_block">
-              <div class="title_1">
-                Medicines Authentication
-              </div>
-              <div class="title_2">
-                Poster
-              </div>
-              <div class="title_3">
-                <span>Date:</span> 22/10/18
-              </div>
-              <div class="btn_block">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-            <div class="articles_block">
-              <div class="title_1">
-                FAQ Medicines Authentication
-              </div>
-              <div class="title_2">
-                Article
-              </div>
-              <div class="title_3">
-                <span>Date:</span> 22/10/18
-              </div>
-              <div class="btn_block">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
+            <?php
+            endif;
+            ?>
           <div class="after_article">
             <a href="#" class="btn btn_action_go">View More</a>
           </div>
@@ -521,43 +520,31 @@ $field_data = get_field('right_content');
               </div>
             </div>
           </div>
-          <div class="socials_wrap">
-            <div class="social_title">
-              Follow us
-            </div>
-            <div class="social">
-              <div class="social_image">
-                <img src="<?php bloginfo('template_directory'); ?>/img/social_tw.svg">
+            <?php
+            if (get_field('social_icons')):
+                ?>
+              <div class="socials_wrap">
+                <div class="social_title">
+                  Follow us
+                </div>
+                  <?php
+                  while (have_rows('social_icons')) : the_row();
+                      ?>
+                    <div class="social">
+                      <div class="social_image">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/<?php echo get_sub_field('image')?>">
+                      </div>
+                      <a href="<?php echo get_sub_field('link')?>" class="social_image_title">
+                          <?php echo get_sub_field('title')?>
+                      </a>
+                    </div>
+                  <?php
+                  endwhile;
+                  ?>
               </div>
-              <a href="#" class="social_image_title">
-                Twitter
-              </a>
-            </div>
-            <div class="social">
-              <div class="social_image">
-                <img src="<?php bloginfo('template_directory'); ?>/img/social_fb.svg">
-              </div>
-              <a href="#" class="social_image_title">
-                Facebook
-              </a>
-            </div>
-            <div class="social">
-              <div class="social_image">
-                <img src="<?php bloginfo('template_directory'); ?>/img/social_in.svg">
-              </div>
-              <a href="#" class="social_image_title">
-                Linkedin
-              </a>
-            </div>
-            <div class="social">
-              <div class="social_image">
-                <img src="<?php bloginfo('template_directory'); ?>/img/social_yt.svg">
-              </div>
-              <a href="#" class="social_image_title">
-                Youtube
-              </a>
-            </div>
-          </div>
+            <?php
+            endif;
+            ?>
         </section>
     </article>
 <?php

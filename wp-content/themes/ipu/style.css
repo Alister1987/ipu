@@ -667,3 +667,7 @@ footer.mk_footer #f_contact {
     background: url(img/icon_action_rightarrow_grey.svg) center center no-repeat;
     right: 18px;
 }
+.mk_home_content .mkh_about .box_wrapper .box-video {
+    position: relative;
+    z-index: 2;
+}

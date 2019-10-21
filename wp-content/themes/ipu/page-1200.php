@@ -39,6 +39,7 @@ get_header();
 		 * ***********/
     $field_data = get_field('right_content');
     $block_images_data = get_field('images');
+    $videos_data = get_field('videos');
 		?>
         <div class="content lp_content eight_column mk_home_content content_same_height">
 
@@ -66,11 +67,11 @@ get_header();
                     ?>
                 </div>
                 <?php
-                if (isset($block_images_data[0])):
+                if (isset($videos_data[0])):
                 ?>
                 <div class="box_wrapper box_w_green">
                   <div class="box-video">
-                    <img src="<?php bloginfo('template_directory'); ?>/img/<?php echo $block_images_data[0]['image']?>" alt="IPU" class="logo_header">
+                    <iframe width="560" height="315" src="<?php echo $videos_data[0]['video_url']?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
                     <?php
