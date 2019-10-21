@@ -1,0 +1,598 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>IPU</title>
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Open Sans Font -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,300italic' rel='stylesheet' type='text/css'>
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+	<meta name="msapplication-TileColor" content="#00a300">
+	<meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+
+
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/modernizr.js"></script>
+	<script>
+		Modernizr.load({
+			test: Modernizr.input.placeholder,
+			nope: 'js/placeholder.js'
+		});
+	</script>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/pace/pace.js"></script>
+
+	<!-- unslider -->
+	<script src="js/unslider.js"></script>
+	<script>
+		$(function() {
+		    $('.slider_event').unslider({
+				speed: 500,               //  The speed to animate each slide (in milliseconds)
+				delay: 3000,              //  The delay between slide animations (in milliseconds)
+				complete: function() {},  //  A function that gets called after every slide animation
+				keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+				dots: false,               //  Display dot navigation
+				fluid: true              //  Support responsive design. May break non-responsive designs
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<header id="header_scroll" class="mk_header_scroll">
+		<div class="logo_wrapper">
+			<a href="#"><img src="img/logo_mini_header.svg" alt="IPU" class="logo_header"></a>
+		</div>
+
+		<nav class="hs_main_menu">
+			<span>menu</span>
+			<ul class="mm_menu">
+				<li class=""><a href="#">Home</li></a>
+				<li class=""><a href="#">About IPU</li></a>
+				<li class=""><a href="#">Member benefits</li></a>
+				<li class=" selected"><a href="#">Pharmacy in ireland</li></a>
+				<li class=""><a href="#">training</li></a>
+				<li class=""><a href="#">communication</li></a>
+				<li class=""><a href="#">Contact</li></a>
+			</ul>
+
+		</nav>
+
+		<nav class="hs_sub_menu">
+			<i>Home</i>
+		</nav>
+		<div id="searchbar_toggle"></div>
+
+		<div class="searchbar">
+			<form class="search_form" action="#" method="get" role="search">
+				<label>
+					<span class="search_hourglass"></span>
+					<input type="search" class="search_field" placeholder="I'm looking for..." value="" name="s" title="I'm looking for..." />
+				</label>
+				<input type="submit" class="search_submit" value="Search" />
+			</form>
+		</div>
+	</header>
+
+	<header>
+		<div id="mk_home_header">
+
+			<div class="logo_wrapper">
+			</div>
+
+			<div class="searchbar">
+				<form class="search_form" action="#" method="get" role="search">
+					<label>
+						<span class="search_hourglass"></span>
+						<input type="search" class="search_field" placeholder="I'm looking for..." value="" name="s" title="I'm looking for..." />
+					</label>
+					<input type="submit" class="search_submit" value="Search" />
+				</form>
+			</div>
+
+			<div class="user_login">
+				<div class="um_info">
+					<div class="um_txt">
+						<span class="um_login">Member Login</span>
+
+					</div>
+				</div>
+				<div class="um_form">
+					<form method="post" action="http://ipu.lightboxdigital.ie/wp-login.php" id="loginform" name="loginform">
+						<p class="umf_username">
+							<label for="user_login">
+							<input type="text" size="20" value="" class="input" id="user_login" name="log" placeholder="Your Username"></label>
+						</p>
+						<p class="umf_password">
+							<label for="user_pass">
+							<input type="password" size="20" value="" class="input" id="user_pass" name="pwd" placeholder="Your password"></label>
+						</p>
+							<p class="forgetmenot">
+								<input type="checkbox" value="forever" id="rememberme" name="rememberme">
+								<label for="rememberme">Remember Me</label>
+							</p>
+						<p class="submit">
+							<input class="btn "type="submit" value="Log In" class="button button-primary button-large" id="wp-submit" name="wp-submit">
+							<input type="hidden" value="http://ipu.lightboxdigital.ie/wp-admin/" name="redirect_to">
+							<input type="hidden" value="1" name="testcookie">
+						</p>
+					</form>
+					<p class="lost">
+						<a title="Password Lost and Found" href="http://ipu.lightboxdigital.ie/wp-login.php?action=lostpassword">Lost your password?</a>
+					</p>
+				</div>
+			</div>
+
+	</header>
+
+	<article id="main_img" class="mk_main">
+
+
+		<nav id="mk_home_main_menu">
+			<div class="logo_wrapper">
+				<a href="#"><img src="img/logo_maxi_header.svg" alt="IPU" class="logo_header"></a>
+			</div>
+			<ul class="mkm_menu">
+				<li class=""><a href="#">Home</li></a>
+				<li class=""><a href="#">About IPU</li></a>
+				<li class=""><a href="#">Member benefits</li></a>
+				<li class=" selected"><a href="#">Pharmacy in ireland</li></a>
+				<li class=""><a href="#">training</li></a>
+				<li class=""><a href="#">communication</li></a>
+				<li class=""><a href="#">Contact</li></a>
+			</ul>
+		</nav>
+
+		<div class="slider_mk_home"> <!-- start home slider -->
+			<a class="unslider-arrow next">next</a>
+		    <ul>
+		        <li class="slide_mk_home">
+					<div class="slider_content">
+						<div class="slider_txt">
+							<h1>IPU 2014 BRAND NEW CAMPAIGN</h1>
+							<p>A TV Advertising campaign was launched on 13 October</p>
+						</div>
+						<div class="slider_action">
+							<span class="btn">Play the video</span>
+						</div>
+					</div>
+		        </li>
+
+		        <li class="slide_mk_home">
+					<div class="slider_content">
+						<div class="slider_txt">
+							<h1>Adevărul se spune glumind.</h1>
+							<p>Așteaptā, murgule, să paşti iarbă verde.</p>
+						</div>
+						<div class="slider_action">
+							<span class="btn">Calul bun</span>
+						</div>
+					</div>
+		        </li>
+		    </ul>
+		</div>	<!-- End home slider -->
+
+
+
+	</article>
+
+	<article id="content_wrapper mk_home_content_wrapper">
+		<aside class="sidebar two_column sb_mk_home content_same_height">
+			<div class="sb_mkh_wrapper">
+				<h3>News feed</h3>
+				<div class="timeline">
+
+					<a href="#">
+						<div class="tl_item tl_n_item tl_n_purple">
+							<div class="tl_date">
+								<span class="tl_day">24</span>
+								<span class="tl_month">jan</span>
+							</div>
+							<div class="tl_iconbar">
+							</div>
+							<div class="tl_txt">
+								<span class="n_cat">cat2</span>
+								<span class="n_title">News title here</span>
+								<span class="n_shortDesc">
+									<p>Standard Operating Procedure for Dealing with the Receipt of Medicinal Products Requiring Medicinal Products Refrigeration.</p>
+								</span>
+								<span class="btn_tl">Read</span>
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="tl_item tl_n_item tl_n_blue">
+							<div class="tl_date">
+								<span class="tl_day">24</span>
+								<span class="tl_month">jan</span>
+							</div>
+							<div class="tl_iconbar">
+							</div>
+							<div class="tl_txt">
+								<span class="n_cat">cat2</span>
+								<span class="n_title">News title here</span>
+								<span class="n_shortDesc">
+									<p>Standard Operating Procedure for Dealing with the Receipt of Medicinal Products Requiring Medicinal Products Refrigeration.</p>
+								</span>
+								<span class="btn_tl">Read</span>
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="tl_item tl_n_item tl_n_green">
+							<div class="tl_date">
+								<span class="tl_day">24</span>
+								<span class="tl_month">jan</span>
+							</div>
+							<div class="tl_iconbar">
+							</div>
+							<div class="tl_txt">
+								<span class="n_cat">cat2</span>
+								<span class="n_title">News title here</span>
+								<span class="n_shortDesc">
+									<p>Standard Operating Procedure for Dealing with the Receipt of Medicinal Products Requiring Medicinal Products Refrigeration.</p>
+								</span>
+								<span class="btn_tl">Read</span>
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="tl_item tl_n_item tl_n_turquoise">
+							<div class="tl_date">
+								<span class="tl_day">24</span>
+								<span class="tl_month">jan</span>
+							</div>
+							<div class="tl_iconbar">
+							</div>
+							<div class="tl_txt">
+								<span class="n_cat">cat2</span>
+								<span class="n_title">News title here</span>
+								<span class="n_shortDesc">
+									<p>Standard Operating Procedure for Dealing with the Receipt of Medicinal Products Requiring Medicinal Products Refrigeration.</p>
+								</span>
+								<span class="btn_tl">Read</span>
+							</div>
+						</div>
+					</a>
+
+				</div>
+			</div>
+		</aside>
+
+		<div class="content lp_content eight_column mk_home_content content_same_height">
+			<section class="mkh_about">
+				<div class="box_wrapper box_green">
+					<div class="box_inside">
+						<h4>Hoy I'm the subtitle</h4>
+						<h3>The title goes here</h3>
+						<div class="box_content">
+							The Review of Community Pharmacy in Ireland is a report prepared on behalf of the IPU. It gives detailed information on community pharmacy and data is collected from members of the IPU for the report.
+						</div>
+						<div class="box_action">
+							<a href="#" class="btn btn_action_go">Learn More</a>
+						</div>
+					</div>
+				</div>
+				<div class="box_wrapper box_w_green">
+					<div class="box_inside">
+						<h4>Hoy I'm the subtitle</h4>
+						<h3>The title goes here</h3>
+						<div class="box_content">
+							The Review of Community Pharmacy in Ireland is a report prepared on behalf of the IPU. It gives detailed information on community pharmacy and data is collected from members of the IPU for the report. Click bellow to view the report from 2012 and 2013.
+						</div>
+						<div class="box_action">
+							<a href="#" class="btn btn_action_go">Become a member</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="grid_wrapper mkh_event"> <!-- start grid wrapper -->
+
+				<div class="w_title">
+					<h3>Event & training</h3>
+					<h2>Upcoming</h2>
+				</div>
+
+				<section class="grid_post grid_sort">
+					<div class="g_item gi_event gi_purple gi_event_img">
+
+						<div class="gi_event_img_wrapper"> 	<!-- if the event got a picture -->
+							<div class="gi_data_sidebar_img">
+								<div class="gi_data_date">
+									<span class="gi_data_day">02</span>
+									<span class="gi_data_month">jan</span>
+								</div>
+							</div>	<!-- end  -->
+
+							<div class="gi_cover_picture"></div>
+							<div class="gi_data_wrapper">
+								<div class="gi_data_sidebar">
+									<div class="gi_data_date">
+										<span class="gi_data_day">02</span>
+										<span class="gi_data_month">jan</span>
+									</div>
+								</div>
+								<div class="gi_data">
+									<div class="gi_data_category_wrapper">
+										<div class="gi_data_category">Event category</div>
+									</div>
+									<h4 class="gi_title">
+										Measuring Progress in your Pharmacy Business
+									</h4>
+									<h4 class="gi_content_txt">
+										In this time of economic recession, understanding the key elements of your business is fundamental in helping your business to survive!
+									</h4>
+									<span class="gi_btn_arrow">Read</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="g_item gi_event gi_purple">
+						<div class="gi_data_wrapper">
+							<div class="gi_data_sidebar">
+								<div class="gi_data_date">
+									<span class="gi_data_day">02</span>
+									<span class="gi_data_month">jan</span>
+								</div>
+							</div>
+							<div class="gi_data">
+									<div class="gi_data_category_wrapper">
+										<div class="gi_data_category">Event category</div>
+									</div>
+								<h4 class="gi_title">
+									Measuring Progress in your Pharmacy Business
+								</h4>
+								<h4 class="gi_content_txt">
+									In this time of economic recession, understanding the key elements of your business is fundamental in helping your business to survive!
+								</h4>
+								<span class="gi_btn_arrow">Read</span>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="g_item gi_event gi_green">
+						<div class="gi_data_wrapper">
+							<div class="gi_data_sidebar">
+								<div class="gi_data_date">
+									<span class="gi_data_day">02</span>
+									<span class="gi_data_month">jan</span>
+								</div>
+							</div>
+							<div class="gi_data">
+									<div class="gi_data_category_wrapper">
+										<div class="gi_data_category">Event category</div>
+									</div>
+								<h4 class="gi_title">
+									Measuring Progress in your Pharmacy Business
+								</h4>
+								<h4 class="gi_content_txt">
+									In this time of economic recession, understanding the key elements of your business is fundamental in helping your business to survive!
+								</h4>
+								<span class="gi_btn_arrow">Read</span>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="g_item gi_event gi_blue">
+						<div class="gi_data_wrapper">
+							<div class="gi_data_sidebar">
+								<div class="gi_data_date">
+									<span class="gi_data_day">02</span>
+									<span class="gi_data_month">jan</span>
+								</div>
+							</div>
+							<div class="gi_data">
+									<div class="gi_data_category_wrapper">
+										<div class="gi_data_category">Event category</div>
+									</div>
+								<h4 class="gi_title">
+									Measuring Progress in your Pharmacy Business
+								</h4>
+								<h4 class="gi_content_txt">
+									In this time of economic recession, understanding the key elements of your business is fundamental in helping your business to survive!
+								</h4>
+								<span class="gi_btn_arrow">Read</span>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="g_item gi_event gi_turquoise gi_event_nodate">
+						<div class="gi_data_wrapper">
+							<div class="gi_data_sidebar">
+								<div class="gi_data_date">
+									<span class="gi_data_day">02</span>
+									<span class="gi_data_month">jan</span>
+								</div>
+							</div>
+							<div class="gi_data">
+									<div class="gi_data_category_wrapper">
+										<div class="gi_data_category">Event category</div>
+									</div>
+								<h4 class="gi_title">
+									Measuring Progress in your Pharmacy Business
+								</h4>
+								<h4 class="gi_content_txt">
+									In this time of economic recession, understanding the key elements of your business is fundamental in helping your business to survive!
+								</h4>
+								<span class="gi_btn_arrow">Read</span>
+
+							</div>
+						</div>
+					</div>
+
+				</section>
+			</div>	<!-- end grid wrapper -->
+
+		</div>
+	</article>
+
+
+	<footer class="mk_footer">
+		<section id="f_cta_picture">
+			<div class="f_overlay">
+				<div class="f_ad_wrapper">
+					<div class="f_ad_member">
+						<div class="logo_wrapper">
+							<img src="img/logo_big_white.svg" alt="IPU" class="logo_header">
+						</div>
+						<span>Member benefits</span>
+					</div>
+					<div class="f_ad_content">
+						<span class="f_ad_title">IPU Instant Assurance Home Quote</span>
+						<span class="f_ad_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisi ipsum, ullamcorper eu ipsum ac.</span>
+						<a href="#" class="btn">Discover the Offer</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="f_contact">
+			<div class="f_contact_wrapper">
+				<div class="f_contact_title">
+					Contact us
+				</div>
+				<div class="f_contact_adress">
+					<p>Butterfield House<br>
+					Butterfield Avenue<br>
+					Rathfarnham<br>
+					Dublin 14<br>
+					Ireland</p>
+				</div>
+				<div class="f_contact_contact">
+					<p>Telephone: +353 1 493 6401<br>
+					Fax: +353 1 493 6407<br>
+					Email: info@ipu.ie</p>
+				</div>
+			</div>
+			<div class="f_contact_social_wrapper">
+				<div class="f_contact_title">
+					Follow us
+				</div>
+				<div class="f_contact_social">
+					<ul>
+						<li class="f_social_tw"><a>Twitter</a></li>
+						<li class="f_social_fb"><a>Facebook</a></li>
+						<li class="f_social_in"><a>Linkedin</a></li>
+						<li class="f_social_yt"><a>Youtube</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="f_furst">
+			<div class="f_sitemap_full">
+				<ul>
+					<li class=""><a href="#">Home</li></a>
+					<li class=""><a href="#">About IPU</li></a>
+					<li class=""><a href="#">Member benefits</li></a>
+					<li class=""><a href="#">Pharmacy in ireland</li></a>
+					<li class=""><a href="#">training</li></a>
+					<li class=""><a href="#">communication</li></a>
+					<li class=""><a href="#">Contact</li></a>
+				</ul>
+			</div>
+			<a href="#" class="f_pharmacist_first">
+				<div class="f_pharmacist_first_inside">
+					<div class="pharmacist_first_logo">
+						<p>Ask your Pharmacist</p>
+						<p class="big">first</p>
+					</div>
+					<div class="pharmacist_first_txt">
+						The IPU encourages patients to Ask Your Pharmacist First for advice.<br>
+						Pharmacists are professional medicines and healthcare experts and puts the patient first.
+					</div>
+				</div>
+			</av>
+
+			<a href="http://wwww.patientsafetyfirst.ie" target="_blank" class="f_patient_safety">
+				<div class="f_patient_safety_logo">
+				</div>
+			</a>
+
+		</section>
+
+		<section id="f_legal_wrapper">
+			<div class="logo_wrapper">
+				<a href="#"><img src="img/logo_mini_header_white.svg" alt="IPU" class="logo_header"></a>
+			</div>
+			<div class="f_legal_copyright">
+				<i>© Copyright 2014 IPU</i>
+			</div>
+			<div class="f_legal_links">
+				<ul>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+					<li><a href="#">Development & Design by Lightbox Digital</a></li>
+				</ul>
+			</div>
+			<a data-scroll href="#header"><div class="f_btn_top"></div></a>
+		</section>
+	</footer>
+
+
+	<script>
+	    var unslider = $('.slider_mk_home').unslider();
+
+	    $('.unslider-arrow').click(function() {
+	        var fn = this.className.split(' ')[1];
+
+	        //  Either do unslider.data('unslider').next() or .prev() depending on the className
+	        unslider.data('unslider')[fn]();
+	    });
+	</script>
+
+
+
+
+	<!-- scripts concatenated and minified via build script -->
+	<script src="js/script.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	  <script type="text/javascript" src="js/selectivizr.js"></script>
+	  <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	<![endif]-->
+
+	<!-- Prompt IE 6 users to install Chrome Frame -->
+	<!--[if lt IE 7 ]>
+	<script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+	<script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
+
+</body>
+</html>

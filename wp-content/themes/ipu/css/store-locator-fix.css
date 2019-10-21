@@ -1,0 +1,103 @@
+@media only screen and (max-width: 800px) {
+    #wpsl-direction-details{
+        display: block;
+        padding: 25px;
+    }
+
+    #wpsl-direction-start{
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: 20px;
+    }
+
+    #wpsl-result-list{
+        width: 100%;
+    }
+}
+/* store locator : location promt css */
+#location-prompt {
+    z-index:9;
+    height: 50px;
+    width: 100%;
+    float: left;
+    display: block;
+    position: fixed;
+    bottom: -51px;
+    opacity: 0;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.f_legal_sticky {
+    width: 100%;
+    bottom: 0px !important;
+    opacity: 1 !important;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+#location-prompt .logo_wrapper {
+    background-color: #282835;
+    float: left;
+    display: block;
+    height: 50px;
+    width: 50px;
+    padding: 10px 0px 0px 10px;
+}
+#location-prompt .f_legal_links {
+    padding: 18px;
+    display: block;
+    float: left;
+    height: 50px;
+    width: -moz-calc(100% - 100px);
+    width: -webkit-calc(100% - 100px);
+    width: calc(100% - 100px);
+    background-color: #3D3D4C;
+    text-align: center;
+}
+@media only screen and (max-width: 414px) {
+    #location-prompt .f_legal_links {
+        padding: 14px;
+    }
+}
+#location-prompt .f_legal_links span {
+    font-size: 12px;
+    color: #e1e1e1;
+    padding: 0 9px;
+    display: block;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#location-prompt .f_btn_top {
+    height: 50px;
+    width: 50px;
+    display: block;
+    cursor: pointer;
+    background: url(../img/icon_action_close_white.svg) center center no-repeat #9A75AF;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    float: left;
+}

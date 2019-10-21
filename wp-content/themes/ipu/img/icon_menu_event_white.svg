@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="25px" height="25px" viewBox="-1.755 -1.75 25 25"
+	 overflow="visible" enable-background="new -1.755 -1.75 25 25" xml:space="preserve">
+<defs>
+</defs>
+<path fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" d="M11.33,20.75
+	c5.197,0,9.41-4.215,9.41-9.414"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="0.75" y1="8.668" x2="20.74" y2="8.668"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" d="M10.514,17.422v-5.426
+	c0,0.562-0.228,1.07-0.597,1.438c-0.367,0.368-0.877,0.598-1.438,0.598"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" x1="12.866" y1="3.254" x2="8.624" y2="3.254"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" d="M6.201,3.254H0.75v17.49
+	h17.492c1.38,0,2.498-1.118,2.498-2.498V3.254h-5.45"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" d="M8.625,1.961v2.584l0,0
+	c0,0.67-0.543,1.213-1.212,1.213l0,0c-0.669,0-1.212-0.543-1.212-1.213l0,0V1.961l0,0c0-0.669,0.543-1.211,1.212-1.211l0,0
+	C8.082,0.75,8.625,1.292,8.625,1.961L8.625,1.961z"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="square" stroke-miterlimit="10" d="M12.866,1.961
+	L12.866,1.961c0-0.669,0.542-1.211,1.212-1.211l0,0c0.669,0,1.212,0.542,1.212,1.211l0,0v2.584l0,0c0,0.67-0.543,1.213-1.212,1.213
+	l0,0c-0.67,0-1.212-0.543-1.212-1.213l0,0V1.961z"/>
+</svg>
