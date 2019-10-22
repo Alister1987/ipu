@@ -304,7 +304,7 @@ $userType = null;
 					</div>
 				</header>
 
-				<article id="main_img" style="<?php if (($feature != $featureDefault)) { ?>background: url('<?= $feature; ?>')<?php } ?>  center center no-repeat;">
+				<article id="main_img" style="<?php if (($feature != $featureDefault)) { ?><?php } ?>  center center no-repeat;">
 					<div class="title_wrapper">
 
 						<?php

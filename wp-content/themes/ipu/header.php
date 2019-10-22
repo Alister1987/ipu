@@ -745,7 +745,7 @@ if(!$parent_page) {
 			$image_url = wp_get_attachment_image_src($image_id, 'main-img', true);
 			$feature = $image_url[0];
 			?>
-            <article id="main_img" class="mk_main mk_page_main_img classttt" <?php if (($feature != $featureDefault)) { ?>style="background-image: url('<?= $feature; ?>');" <?php } ?>>
+            <article id="main_img" class="mk_main mk_page_main_img classttt" <?php if (($feature != $featureDefault)) { ?><?php } ?>>
                 <div class="hero_wrapper <?php echo $empty_header_class ?>">
 
 					<?php }else{?>
