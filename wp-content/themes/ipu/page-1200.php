@@ -39,6 +39,11 @@ get_header();
 		 * ***********/
     $field_data = get_field('right_content');
     $block_images_data = get_field('images');
+
+		/**
+		 *  Video content from internet
+		 */
+    $video_from_youtube = get_field('video_from_youtube');
 		?>
         <div class="content lp_content eight_column mk_home_content content_same_height">
 
@@ -68,9 +73,14 @@ get_header();
                 <?php
                 if (isset($block_images_data[0])):
                 ?>
-                <div class="box_wrapper box_w_green">
+
+                <!-- box_wrapper -->
+                <div class="box_w_green">
                   <div class="box-video">
-                    <img src="<?php bloginfo('template_directory'); ?>/img/<?php echo $block_images_data[0]['image']?>" alt="IPU" class="logo_header">
+<!--                    <img src="--><?php //bloginfo('template_directory'); ?><!--/img/--><?php //echo $block_images_data[0]['image']?><!--" alt="IPU" class="logo_header">-->
+                    <div class="embed-container">
+		                  <?php echo $video_from_youtube; ?>
+                    </div>
                   </div>
                 </div>
                     <?php
